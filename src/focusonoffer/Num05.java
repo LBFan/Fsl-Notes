@@ -16,7 +16,7 @@ public class Num05 {
         int P1 = str.length() - 1;
         for (int i = 0; i <= P1; i++) {
             if (str.charAt(i) == ' ') {
-                // add two space at  the tail of str
+                // add 'two' space at  the tail of str
                 str.append("  ");
             }
         }
