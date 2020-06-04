@@ -1,5 +1,7 @@
 package focusonoffer;
 
+import java.util.ArrayList;
+
 /**
  * @author :  PF_23
  * @Description : 斐波那契数列
@@ -21,6 +23,7 @@ public class Num10Plus1 {
             pre2 = fib[i];
         }
     }
+
 
     public int Fibonacci(int n) {
         return fib[n];
