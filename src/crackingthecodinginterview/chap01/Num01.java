@@ -7,7 +7,7 @@ package crackingthecodinginterview.chap01;
  */
 
 public class Num01 {
-    private static boolean isUniqueChars(String str) {
+    public static boolean isUniqueChars(String str) {
         if (str.length() > 128) {
             return false;
         }
