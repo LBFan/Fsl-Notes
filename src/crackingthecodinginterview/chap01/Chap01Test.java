@@ -31,7 +31,7 @@ public class Chap01Test {
     @Test
     public void testNum03() {
         String s = "er tyu io";
-        String result= Num03.replaceSpaces(s);
+        String result = Num03.replaceSpaces(s);
         Assert.assertEquals("er%20tyu%20io", result);
     }
 
@@ -57,5 +57,13 @@ public class Chap01Test {
         Assert.assertEquals("a3b5c2", compress);
         String compress1 = Num06.compress(t);
         Assert.assertEquals("abc", compress1);
+    }
+
+
+    @Test
+    public void testNum07() {
+        int[][] matrix = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
+        boolean rotate = Num07.rotate(matrix);
+        Assert.assertTrue(rotate);
     }
 }
