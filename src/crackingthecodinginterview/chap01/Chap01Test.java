@@ -6,7 +6,7 @@ import org.junit.Test;
 
 /**
  * @author : PF_23
- * @Description :
+ * @Description : chap01 test
  * @date : 2020/06/09.
  */
 public class Chap01Test {
@@ -63,6 +63,21 @@ public class Chap01Test {
     public void testNum07() {
         int[][] matrix = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
         boolean rotate = Num07.rotate(matrix);
+        Assert.assertTrue(rotate);
+    }
+
+    @Test
+    public void testNum08() {
+        int[][] matrix = {{1, 1, 1, 0, 1, 1}, {0, 1, 1, 0, 1, 1}, {1, 1, 1, 1, 1, 1, 1}, {0, 0, 1, 1, 1, 1}, {1, 1, 1, 1, 1, 1, 1}, {1, 1, 0, 1, 1, 0}};
+        Num08.zeroMatrix(matrix);
+        int[][] result = {{0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 0}, {0, 0, 0, 0, 0, 0}};
+        Assert.assertNotSame(result, matrix);
+    }
+
+    @Test
+    public void testNum09() {
+        String s1 = "waterbottle", s2 = "erbottlewat";
+        boolean rotate = Num09.isRotate(s1, s2);
         Assert.assertTrue(rotate);
     }
 }
