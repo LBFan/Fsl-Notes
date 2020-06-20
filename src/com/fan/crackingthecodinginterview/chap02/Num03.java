@@ -17,23 +17,22 @@ import java.util.List;
 
 public class Num03 {
 
-    public ListNode delMid(ListNode head) {
+    public static ListNode delMid(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }
         if (head.next.next == null) {
             return head.next;
         }
-        ListNode fast = head.next.next, slow = head;
-        while (fast.next != null) {
+        ListNode fast = head, slow = head;
+        while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
         }
-        ListNode cur = head;
-        while (cur.next != slow) {
-            cur = cur.next;
-        }
-        cur.next = slow.next;
+        // 删除slow结点
+        ListNode cur = slow.next;
+        slow.val = cur.val;
+        slow.next = cur.next;
         return head;
     }
 }
