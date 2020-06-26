@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ab82ef4-374a-447a-8e77-485c71c9911c" name="Default Changelist" comment="【新增】">
-      <change afterPath="$PROJECT_DIR$/src/com/fan/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fan/Base64Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/fan/ImageBase64Converter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fsl-Notes/crackingthecodinginterview/chap01/Num07.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fsl-Notes/tujiedesignpattern/chap01/Aggregate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fsl-Notes/tujiedesignpattern/chap01/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fsl-Notes/tujiedesignpattern/chap01/BookSelf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fsl-Notes/tujiedesignpattern/chap01/BookSelfIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fsl-Notes/tujiedesignpattern/chap01/Iterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Fsl-Notes/tujiedesignpattern/chap01/Main.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fan/dp/StoneGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +170,7 @@
       <workItem from="1592748885669" duration="941000" />
       <workItem from="1592796644165" duration="230000" />
       <workItem from="1592829438160" duration="278000" />
-      <workItem from="1592908170923" duration="9578000" />
+      <workItem from="1592908170923" duration="13351000" />
     </task>
     <task id="LOCAL-00001" summary="单列">
       <created>1590589843116</created>
@@ -326,23 +317,23 @@
       <screen x="39" y="23" width="1401" height="877" />
     </state>
     <state x="204" y="118" width="1149" height="686" key="#com.intellij.execution.impl.EditConfigurationsDialog/39.23.1401.877@39.23.1401.877" timestamp="1592444135287" />
-    <state x="867" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1591951223834">
-      <screen x="38" y="23" width="1402" height="877" />
+    <state x="866" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1593152079116">
+      <screen x="35" y="23" width="1405" height="877" />
     </state>
     <state x="852" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1590676045831" />
-    <state x="866" y="127" key="#com.intellij.ide.util.MemberChooser/35.23.1405.877@35.23.1405.877" timestamp="1591112880679" />
+    <state x="866" y="127" key="#com.intellij.ide.util.MemberChooser/35.23.1405.877@35.23.1405.877" timestamp="1593152079116" />
     <state x="867" y="127" key="#com.intellij.ide.util.MemberChooser/37.23.1403.877@37.23.1403.877" timestamp="1591950598537" />
     <state x="867" y="127" key="#com.intellij.ide.util.MemberChooser/38.23.1402.877@38.23.1402.877" timestamp="1591951223834" />
     <state x="348" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591949918921">
       <screen x="37" y="23" width="1403" height="877" />
     </state>
     <state x="348" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/37.23.1403.877@37.23.1403.877" timestamp="1591949918920" />
-    <state x="281" y="23" key="CommitChangelistDialog2" timestamp="1592623828444">
-      <screen x="35" y="23" width="1405" height="877" />
+    <state x="280" y="23" key="CommitChangelistDialog2" timestamp="1593163213793">
+      <screen x="34" y="23" width="1406" height="877" />
     </state>
     <state x="251" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1590589842970" />
     <state x="279" y="23" key="CommitChangelistDialog2/33.23.1407.877@33.23.1407.877" timestamp="1591279630588" />
-    <state x="280" y="23" key="CommitChangelistDialog2/34.23.1406.877@34.23.1406.877" timestamp="1591147794837" />
+    <state x="280" y="23" key="CommitChangelistDialog2/34.23.1406.877@34.23.1406.877" timestamp="1593163213793" />
     <state x="281" y="23" key="CommitChangelistDialog2/35.23.1405.877@35.23.1405.877" timestamp="1592623828444" />
     <state x="281" y="23" key="CommitChangelistDialog2/36.23.1404.877@36.23.1404.877" timestamp="1592562735974" />
     <state x="282" y="23" key="CommitChangelistDialog2/37.23.1403.877@37.23.1403.877" timestamp="1591692564091" />
@@ -433,6 +424,10 @@
     <state x="401" y="138" width="688" height="655" key="StructurePopup/35.23.1405.877@35.23.1405.877" timestamp="1592749132180" />
     <state x="402" y="138" width="687" height="655" key="StructurePopup/36.23.1404.877@36.23.1404.877" timestamp="1591196779071" />
     <state x="403" y="138" width="675" height="655" key="StructurePopup/37.23.1403.877@37.23.1403.877" timestamp="1591094714619" />
+    <state x="478" y="125" key="VCS.ChangeListViewerDialog" timestamp="1593163254272">
+      <screen x="34" y="23" width="1406" height="877" />
+    </state>
+    <state x="478" y="125" key="VCS.ChangeListViewerDialog/34.23.1406.877@34.23.1406.877" timestamp="1593163254272" />
     <state x="249" y="147" key="Vcs.Push.Dialog.v2" timestamp="1592623831241">
       <screen x="35" y="23" width="1405" height="877" />
     </state>
@@ -446,13 +441,13 @@
       <screen x="37" y="23" width="1403" height="877" />
     </state>
     <state x="363" y="346" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/37.23.1403.877@37.23.1403.877" timestamp="1591692467411" />
-    <state x="509" y="370" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592623801071">
-      <screen x="35" y="23" width="1405" height="877" />
+    <state x="508" y="370" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593163244634">
+      <screen x="34" y="23" width="1406" height="877" />
     </state>
     <state x="485" y="356" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1590675646555" />
     <state x="505" y="370" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/29.23.1411.877@29.23.1411.877" timestamp="1591357569265" />
     <state x="508" y="370" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/33.23.1407.877@33.23.1407.877" timestamp="1591280092699" />
-    <state x="508" y="370" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/34.23.1406.877@34.23.1406.877" timestamp="1591147670326" />
+    <state x="508" y="370" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/34.23.1406.877@34.23.1406.877" timestamp="1593163244634" />
     <state x="509" y="370" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/35.23.1405.877@35.23.1405.877" timestamp="1592623801071" />
     <state x="509" y="370" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/36.23.1404.877@36.23.1404.877" timestamp="1592562706334" />
     <state x="510" y="370" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/37.23.1403.877@37.23.1403.877" timestamp="1592552293284" />
