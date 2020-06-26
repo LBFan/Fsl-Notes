@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c5807548-e0c3-4fc4-a235-d2db069fba59" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="git@github.com:/LBFan/Fsl-Notes.git" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="/usr/local/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="/usr/local/apache-maven-3.3.9/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cRfTscfYS3j6P1K6VolpvTqwON" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/fan/zuoalgorithm" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="crackingthecodinginterview.chap01" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/fan/zuoalgorithm" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.fan.leetcode" />
+      <recent name="tujiedesignpattern.chap03" />
+      <recent name="heima.threadlocal" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/fan" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.IntegerStudy">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration name="IntegerStudy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fan.jdk.source.IntegerStudy" />
+      <module name="Fsl-Notes" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fan.jdk.source.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Num01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fan.crackingthecodinginterview.chap02.Num01" />
+      <module name="Fsl-Notes" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fan.crackingthecodinginterview.chap02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringStudy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fan.jdk.source.StringStudy" />
+      <module name="Fsl-Notes" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fan.jdk.source.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Chap01Test.testNum09" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Fsl-Notes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="crackingthecodinginterview.chap01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="crackingthecodinginterview.chap01" />
+      <option name="MAIN_CLASS_NAME" value="crackingthecodinginterview.chap01.Chap01Test" />
+      <option name="METHOD_NAME" value="testNum09" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Chap02Test.testNum01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Fsl-Notes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fan.crackingthecodinginterview.chap02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fan.crackingthecodinginterview.chap02" />
+      <option name="MAIN_CLASS_NAME" value="com.fan.crackingthecodinginterview.chap02.Chap02Test" />
+      <option name="METHOD_NAME" value="testNum01" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.IntegerStudy" />
+        <item itemvalue="Application.StringStudy" />
+        <item itemvalue="Application.Num01" />
+        <item itemvalue="JUnit.Chap02Test.testNum01" />
+        <item itemvalue="JUnit.Chap01Test.testNum09" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c5807548-e0c3-4fc4-a235-d2db069fba59" name="Default Changelist" comment="" />
+      <created>1590496337421</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590496337421</updated>
+      <workItem from="1590496339874" duration="5827000" />
+      <workItem from="1591158427384" duration="11585000" />
+      <workItem from="1591762071866" duration="118000" />
+      <workItem from="1591762221811" duration="369000" />
+      <workItem from="1591762652742" duration="1217000" />
+      <workItem from="1592280070919" duration="2714000" />
+      <workItem from="1592305825749" duration="1203000" />
+      <workItem from="1592307173534" duration="5640000" />
+      <workItem from="1592452244277" duration="7042000" />
+      <workItem from="1592841092771" duration="24494000" />
+    </task>
+    <task id="LOCAL-00001" summary="增加注释">
+      <created>1590641998641</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590641998641</updated>
+    </task>
+    <task id="LOCAL-00002" summary="设计模式之template、factory、singleton">
+      <created>1591279797818</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591279797819</updated>
+    </task>
+    <task id="LOCAL-00003" summary="设计模式之template、factory、singleton">
+      <created>1591279875352</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591279875352</updated>
+    </task>
+    <task id="LOCAL-00004" summary="程序员面试金典">
+      <created>1591681698761</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591681698763</updated>
+    </task>
+    <task id="LOCAL-00005" summary="程序员面试金典 1.8,1.9">
+      <created>1592282853025</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1592282853025</updated>
+    </task>
+    <task id="LOCAL-00006" summary="程序员面试金典 Chap01Test">
+      <created>1592307537508</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1592307537508</updated>
+    </task>
+    <task id="LOCAL-00007" summary="调整代码结构">
+      <created>1592319395635</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1592319395635</updated>
+    </task>
+    <task id="LOCAL-00008" summary="添加chap02测试代码">
+      <created>1592319930832</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1592319930833</updated>
+    </task>
+    <task id="LOCAL-00009" summary="删除链表中间结点">
+      <created>1592496346291</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1592496346291</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加注释" />
+    <MESSAGE value="设计模式之template、factory、singleton" />
+    <MESSAGE value="程序员面试金典" />
+    <MESSAGE value="程序员面试金典 1.8,1.9" />
+    <MESSAGE value="程序员面试金典 Chap01Test" />
+    <MESSAGE value="调整代码结构" />
+    <MESSAGE value="添加chap02测试代码" />
+    <MESSAGE value="删除链表中间结点" />
+    <MESSAGE value="新增" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="231" y="43" key="#Project_Structure" timestamp="1592306713273">
+      <screen x="43" y="23" width="1397" height="877" />
+    </state>
+    <state x="231" y="43" key="#Project_Structure/43.23.1397.877@43.23.1397.877" timestamp="1592306713273" />
+    <state x="555" y="184" key="#com.intellij.ide.util.MemberChooser" timestamp="1591277388171">
+      <screen x="44" y="23" width="1396" height="877" />
+    </state>
+    <state x="555" y="184" key="#com.intellij.ide.util.MemberChooser/44.23.1396.877@44.23.1396.877" timestamp="1591277388171" />
+    <state x="479" y="223" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1591763068378">
+      <screen x="43" y="23" width="1397" height="877" />
+    </state>
+    <state x="479" y="223" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/43.23.1397.877@43.23.1397.877" timestamp="1591763068378" />
+    <state x="293" y="26" key="CommitChangelistDialog2" timestamp="1593162393836">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="293" y="26" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1593162393836" />
+    <state x="198" y="34" key="CommitChangelistDialog2/44.23.1396.877@44.23.1396.877" timestamp="1592319930600" />
+    <state x="200" y="52" key="CommitChangelistDialog2/46.23.1394.877@46.23.1394.877" timestamp="1592282852607" />
+    <state x="202" y="34" key="CommitChangelistDialog2/49.23.1391.877@49.23.1391.877" timestamp="1592496346054" />
+    <state x="591" y="354" key="Github.ShareDialog" timestamp="1590554352828">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="591" y="354" key="Github.ShareDialog/0.0.1440.900@0.0.1440.900" timestamp="1590554352828" />
+    <state x="491" y="162" key="Github.UntrackedFilesDialog" timestamp="1590554388922">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="491" y="162" key="Github.UntrackedFilesDialog/0.0.1440.900@0.0.1440.900" timestamp="1590554388922" />
+    <state width="697" height="250" key="GridCell.Tab.0.bottom" timestamp="1593162450680">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="697" height="250" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593162450680" />
+    <state width="1352" height="285" key="GridCell.Tab.0.bottom/43.23.1397.877@43.23.1397.877" timestamp="1592307147723" />
+    <state width="1350" height="250" key="GridCell.Tab.0.bottom/44.23.1396.877@44.23.1396.877" timestamp="1592320247788" />
+    <state width="1354" height="285" key="GridCell.Tab.0.bottom/46.23.1394.877@46.23.1394.877" timestamp="1592452013934" />
+    <state width="1334" height="250" key="GridCell.Tab.0.bottom/49.23.1391.877@49.23.1391.877" timestamp="1593081007777" />
+    <state width="697" height="250" key="GridCell.Tab.0.center" timestamp="1593162450679">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="697" height="250" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1593162450679" />
+    <state width="1352" height="285" key="GridCell.Tab.0.center/43.23.1397.877@43.23.1397.877" timestamp="1592307147722" />
+    <state width="1350" height="250" key="GridCell.Tab.0.center/44.23.1396.877@44.23.1396.877" timestamp="1592320247788" />
+    <state width="1354" height="285" key="GridCell.Tab.0.center/46.23.1394.877@46.23.1394.877" timestamp="1592452013933" />
+    <state width="1334" height="250" key="GridCell.Tab.0.center/49.23.1391.877@49.23.1391.877" timestamp="1593081007776" />
+    <state width="697" height="250" key="GridCell.Tab.0.left" timestamp="1593162450678">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="697" height="250" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1593162450678" />
+    <state width="1352" height="285" key="GridCell.Tab.0.left/43.23.1397.877@43.23.1397.877" timestamp="1592307147722" />
+    <state width="1350" height="250" key="GridCell.Tab.0.left/44.23.1396.877@44.23.1396.877" timestamp="1592320247787" />
+    <state width="1354" height="285" key="GridCell.Tab.0.left/46.23.1394.877@46.23.1394.877" timestamp="1592452013933" />
+    <state width="1334" height="250" key="GridCell.Tab.0.left/49.23.1391.877@49.23.1391.877" timestamp="1593081007775" />
+    <state width="697" height="250" key="GridCell.Tab.0.right" timestamp="1593162450680">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="697" height="250" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1593162450680" />
+    <state width="1352" height="285" key="GridCell.Tab.0.right/43.23.1397.877@43.23.1397.877" timestamp="1592307147723" />
+    <state width="1350" height="250" key="GridCell.Tab.0.right/44.23.1396.877@44.23.1396.877" timestamp="1592320247788" />
+    <state width="1354" height="285" key="GridCell.Tab.0.right/46.23.1394.877@46.23.1394.877" timestamp="1592452013934" />
+    <state width="1334" height="250" key="GridCell.Tab.0.right/49.23.1391.877@49.23.1391.877" timestamp="1593081007776" />
+    <state width="1334" height="283" key="GridCell.Tab.1.bottom" timestamp="1593064359583">
+      <screen x="49" y="23" width="1391" height="877" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1590913132811" />
+    <state width="1352" height="285" key="GridCell.Tab.1.bottom/43.23.1397.877@43.23.1397.877" timestamp="1592307147722" />
+    <state width="1354" height="285" key="GridCell.Tab.1.bottom/44.23.1396.877@44.23.1396.877" timestamp="1592307415532" />
+    <state width="1354" height="285" key="GridCell.Tab.1.bottom/46.23.1394.877@46.23.1394.877" timestamp="1592452013940" />
+    <state width="1334" height="283" key="GridCell.Tab.1.bottom/49.23.1391.877@49.23.1391.877" timestamp="1593064359583" />
+    <state width="1334" height="283" key="GridCell.Tab.1.center" timestamp="1593064359581">
+      <screen x="49" y="23" width="1391" height="877" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1590913132810" />
+    <state width="1352" height="285" key="GridCell.Tab.1.center/43.23.1397.877@43.23.1397.877" timestamp="1592307147721" />
+    <state width="1354" height="285" key="GridCell.Tab.1.center/44.23.1396.877@44.23.1396.877" timestamp="1592307415531" />
+    <state width="1354" height="285" key="GridCell.Tab.1.center/46.23.1394.877@46.23.1394.877" timestamp="1592452013938" />
+    <state width="1334" height="283" key="GridCell.Tab.1.center/49.23.1391.877@49.23.1391.877" timestamp="1593064359581" />
+    <state width="1334" height="283" key="GridCell.Tab.1.left" timestamp="1593064359581">
+      <screen x="49" y="23" width="1391" height="877" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1590913132809" />
+    <state width="1352" height="285" key="GridCell.Tab.1.left/43.23.1397.877@43.23.1397.877" timestamp="1592307147720" />
+    <state width="1354" height="285" key="GridCell.Tab.1.left/44.23.1396.877@44.23.1396.877" timestamp="1592307415530" />
+    <state width="1354" height="285" key="GridCell.Tab.1.left/46.23.1394.877@46.23.1394.877" timestamp="1592452013935" />
+    <state width="1334" height="283" key="GridCell.Tab.1.left/49.23.1391.877@49.23.1391.877" timestamp="1593064359581" />
+    <state width="1334" height="283" key="GridCell.Tab.1.right" timestamp="1593064359582">
+      <screen x="49" y="23" width="1391" height="877" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1590913132811" />
+    <state width="1352" height="285" key="GridCell.Tab.1.right/43.23.1397.877@43.23.1397.877" timestamp="1592307147721" />
+    <state width="1354" height="285" key="GridCell.Tab.1.right/44.23.1396.877@44.23.1396.877" timestamp="1592307415531" />
+    <state width="1354" height="285" key="GridCell.Tab.1.right/46.23.1394.877@46.23.1394.877" timestamp="1592452013939" />
+    <state width="1334" height="283" key="GridCell.Tab.1.right/49.23.1391.877@49.23.1391.877" timestamp="1593064359582" />
+    <state x="65" y="41" key="SettingsEditor" timestamp="1593162578031">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="65" y="41" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1593162578031" />
+    <state x="229" y="43" key="SettingsEditor/43.23.1397.877@43.23.1397.877" timestamp="1592307121181" />
+    <state x="107" y="178" key="SettingsEditor/44.23.1396.877@44.23.1396.877" timestamp="1592317551587" />
+    <state x="232" y="43" key="SettingsEditor/46.23.1394.877@46.23.1394.877" timestamp="1592306036606" />
+    <state x="112" y="63" key="SettingsEditor/49.23.1391.877@49.23.1391.877" timestamp="1593053694850" />
+    <state x="483" y="218" width="551" height="511" key="StructurePopup" timestamp="1593090088928">
+      <screen x="49" y="23" width="1391" height="877" />
+    </state>
+    <state x="450" y="200" width="552" height="524" key="StructurePopup/0.0.1440.900@0.0.1440.900" timestamp="1590500100837" />
+    <state x="480" y="218" width="552" height="511" key="StructurePopup/44.23.1396.877@44.23.1396.877" timestamp="1591276763012" />
+    <state x="483" y="218" width="551" height="511" key="StructurePopup/49.23.1391.877@49.23.1391.877" timestamp="1593090088928" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1593162419065">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593162419065" />
+    <state x="354" y="208" key="Vcs.Push.Dialog.v2/44.23.1396.877@44.23.1396.877" timestamp="1592319934831" />
+    <state x="356" y="208" key="Vcs.Push.Dialog.v2/46.23.1394.877@46.23.1394.877" timestamp="1592282854988" />
+    <state x="358" y="208" key="Vcs.Push.Dialog.v2/49.23.1391.877@49.23.1391.877" timestamp="1592496352322" />
+    <state x="712" y="80" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1591678132358">
+      <screen x="44" y="23" width="1396" height="877" />
+    </state>
+    <state x="712" y="80" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/44.23.1396.877@44.23.1396.877" timestamp="1591678132358" />
+    <state x="509" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593162307908">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="509" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1593162307908" />
+    <state x="535" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/42.23.1398.877@42.23.1398.877" timestamp="1591880633813" />
+    <state x="536" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/43.23.1397.877@43.23.1397.877" timestamp="1592307134853" />
+    <state x="537" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/44.23.1396.877@44.23.1396.877" timestamp="1592319260491" />
+    <state x="538" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/46.23.1394.877@46.23.1394.877" timestamp="1592280152591" />
+    <state x="540" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/49.23.1391.877@49.23.1391.877" timestamp="1592575537947" />
+    <state x="478" y="282" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1591679089186">
+      <screen x="44" y="23" width="1396" height="877" />
+    </state>
+    <state x="478" y="282" key="com.intellij.testIntegration.createTest.CreateTestDialog/44.23.1396.877@44.23.1396.877" timestamp="1591679089186" />
+    <state x="451" y="206" width="588" height="510" key="find.popup" timestamp="1592495901487">
+      <screen x="49" y="23" width="1391" height="877" />
+    </state>
+    <state x="447" y="206" width="590" height="510" key="find.popup/44.23.1396.877@44.23.1396.877" timestamp="1592318461906" />
+    <state x="451" y="206" width="588" height="510" key="find.popup/49.23.1391.877@49.23.1391.877" timestamp="1592495901487" />
+    <state x="411" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1593092593550">
+      <screen x="49" y="23" width="1391" height="877" />
+    </state>
+    <state x="407" y="213" width="670" height="676" key="search.everywhere.popup/44.23.1396.877@44.23.1396.877" timestamp="1592318422628" />
+    <state x="411" y="213" width="670" height="676" key="search.everywhere.popup/49.23.1391.877@49.23.1391.877" timestamp="1593092593550" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/fan/focusonoffer/Num03Plus.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/fan/focusonoffer/Num03Plus.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/fan/crackingthecodinginterview/chap02/Num01.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src/java/lang/Integer.java</url>
+          <line>1249</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src/java/lang/Integer.java</url>
+          <line>1233</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
