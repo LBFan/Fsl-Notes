@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/.idea/Fsl-Notes.iml" filepath="$PROJECT_DIR$/.idea/Fsl-Notes.iml" />
+=======
       <module fileurl="file://$PROJECT_DIR$/Fsl-Notes.iml" filepath="$PROJECT_DIR$/Fsl-Notes.iml" />
+>>>>>>> 601d14fc04e433ba4608b922763ff13b518980d8
     </modules>
   </component>
 </project>
