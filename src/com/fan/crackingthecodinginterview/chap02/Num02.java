@@ -23,7 +23,7 @@ public class Num02 {
             throw new RuntimeException("数字大于链表长度");
         }
         cur = node;
-        while (k > 0) {
+        while (k < 0) {
             cur = cur.next;
             k++;
         }
