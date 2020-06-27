@@ -88,7 +88,7 @@ public class Num07 {
             right = Math.max(right, l);
             // 找到的l就是ends有效区中最左大于等于arr[i]的值得下标
             ends[l] = arr[i];
-            // 当前arr[0..i]的最长递增区间的长度为 l + 1
+            // 当前arr[0..i]的最长递增区间的长度为 l + 1 l是下标，长度是l + 1
             dp[i] = l + 1;
         }
         return dp;
