@@ -26,5 +26,7 @@ public class PetEnterQueue {
     public String getEnterType() {
         return this.pet.getPetType();
     }
+
+
 }
 
