@@ -13,6 +13,41 @@ import java.util.Arrays;
 
 public class QuickSort {
 
+    public static void quickSort01(int[] arr, int l, int h) {
+        if (h <= l) {
+            return;
+        }
+        int j = partition(arr, l, h);
+        quickSort01(arr, l, j - 1);
+        quickSort01(arr, j + 1, h);
+    }
+
+    private static int partition(int[] arr, int l, int h) {
+        int i = l, j = h + 1;
+        int value = arr[l];
+        while (true) {
+            while (arr[++i] < value && i != h) {
+
+            }
+            while ((arr[--j] > value && j != l)) {
+
+            }
+
+            if (i >= j) {
+                break;
+            }
+            swap(arr, i, j);
+        }
+        swap(arr, l, j);
+        return j;
+    }
+
+    private static void swap(int[] arr, int i, int j) {
+        int tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+    }
+
     public static void quickSort(int[] arr, int left, int right) {
         int l = left;
         int r = right;
@@ -58,7 +93,7 @@ public class QuickSort {
 
     public static void main(String[] args) {
         int[] num = {9, 8, 3, 6, 4, 1, 2};
-        quickSort(num, 0, num.length - 1);
+        quickSort01(num, 0, num.length - 1);
         System.out.println(Arrays.toString(num));
     }
 }

@@ -32,7 +32,7 @@ public class HeapSort {
 
         //分步完成
         // 1.构造一个大顶堆（升序排序）
-//        adjustHeap(arr, 1, arr.length);
+        // adjustHeap(arr, 1, arr.length);
         for (int i = arr.length / 2 - 1; i >= 0; i--) {
             adjustHeap(arr, i, arr.length);
         }

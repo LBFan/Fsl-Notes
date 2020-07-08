@@ -25,20 +25,19 @@ public class BubbleSort {
 
     public static void bubbleSort(int[] arr) {
         // 标识变量， 表示是否进行过交换
-        boolean flag = false;
-        for (int i = 0; i < arr.length - 1 && !flag; ++i) {
-            /// 重要！！！ 每一趟开始时都假定会发生交换
-            flag = true;
+        boolean flag = true;
+        /// 重要！！！ 每一趟开始时都假定不会发生交换
+        for (int i = 0; i < arr.length - 1 && flag; ++i) {
+            flag = false;
             for (int j = 0; j < arr.length - 1 - i; j++) {
                 if (arr[j] > arr[j + 1]) {
                     // 交换
-                    flag = false;
+                    flag = true;
                     SwapUtil.swap(arr, j, j + 1);
                 }
             }
         }
 
     }
-
 }
 
