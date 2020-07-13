@@ -9,7 +9,7 @@ public class RadixSort {
     public static void radixSort(int[] arr) {
         int max = arr[0];
         for (int a : arr) {
-            max = a > max ? a : max;
+            max = Math.max(a, max);
         }
 
         int maxLen = (max + "").length();
