@@ -1,27 +1,20 @@
-package com.fan.focusonoffer;
+package com.fan.exam.jianzhioffer;
+
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author :  PF_23
  * @Description : 重建二叉树
- * 递归 TODO : 有待理解
- * 通过画图帮助理解
- * @date : 2019/12/12.
+ * @Author : shulin.fan
+ * @Date : 2020/7/13
  */
-
 public class Num07 {
     /**
      * 缓存中序遍历数组每个值对应的索引
      */
     private Map<Integer, Integer> indexForInOrders = new HashMap<>();
 
-    /**
-     * @param pre
-     * @param in
-     * @return
-     */
     public TreeNode reConstructBinaryTree(int[] pre, int[] in) {
         for (int i = 0; i < in.length; i++) {
             indexForInOrders.put(in[i], i);
@@ -37,9 +30,7 @@ public class Num07 {
         Integer inIndex = indexForInOrders.get(root.val);
         int leftTreeSize = inIndex - inL;
         root.left = reConstructBinaryTree(pre, preL + 1, preL + leftTreeSize, inL);
-        root.right = reConstructBinaryTree(pre, preL + leftTreeSize + 1, preR,
-                inL + leftTreeSize + 1);
+        root.right = reConstructBinaryTree(pre, preL + leftTreeSize + 1, preR, inL + leftTreeSize + 1);
         return root;
     }
 }
-

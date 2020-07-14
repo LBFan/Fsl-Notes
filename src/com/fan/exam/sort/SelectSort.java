@@ -1,4 +1,4 @@
-package com.fan.exam;
+package com.fan.exam.sort;
 
 /**
  * @Description : 选择排序
