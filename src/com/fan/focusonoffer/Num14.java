@@ -32,16 +32,15 @@ public class Num14 {
         if (n % 3 == 1) {
             threeTimes--;
         }
-//        int twoTimes = (n - threeTimes *3) / 2;
-        return (int) (Math.pow(3, threeTimes) * 4);
-//        return (int) (Math.pow(3, threeTimes) * Math.pow(2, twoTimes));
+        int twoTimes = (n - threeTimes *3) / 2;
+        return (int) (Math.pow(3, threeTimes) * Math.pow(2, twoTimes));
     }
 
     public static int integerBreakByDp(int n) {
         int[] dp = new int[n + 1];
         // 长度为1的时候的乘积
-        dp[1] = 1;
-        for (int i = 0; i <= n; i++) {
+        dp[1] = 0;
+        for (int i = 2; i <= n; i++) {
             for (int j = 1; j < i; j++) {
                 // 长度为i时剪绳子的最大乘积
                 dp[i] = Math.max(dp[i], Math.max(dp[j] * (i - j), j * (i - j)));
@@ -77,7 +76,7 @@ public class Num14 {
     }
 
     public static void main(String[] args) {
-        int n = 10;
+        int n = 12;
         int i = new Num14().integerBreak(n);
         int breakByDp = integerBreakByDp(n);
         System.out.println(breakByDp);

@@ -51,7 +51,7 @@ public class Num17 {
             index++;
         }
         while (index < number.length) {
-            System.out.print(number[index]);
+            System.out.print(number[index++]);
         }
         System.out.println();
     }

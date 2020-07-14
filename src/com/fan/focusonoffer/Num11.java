@@ -39,12 +39,12 @@ public class Num11 {
      * @param nums 旋转数组
      * @return 最小值
      */
-    public int minNumberInRotateArrayWithRepeat(int[] nums) {
+    public static int minNumberInRotateArrayWithRepeat(int[] nums) {
         int lo = 0, hi = nums.length - 1;
         while (lo < hi) {
             int mid = lo + (hi - lo) / 2;
             if (nums[lo] == nums[mid] && nums[mid] == nums[hi]) {
-                minNumber(nums, lo, hi);
+                return minNumber(nums, lo, hi);
             } else if (nums[mid] <= nums[hi]) {
                 hi = mid;
             } else {
@@ -55,7 +55,7 @@ public class Num11 {
 
     }
 
-    private int minNumber(int[] nums, int low, int hi) {
+    private static int minNumber(int[] nums, int low, int hi) {
         for (int i = low; i < hi; i++) {
             if (nums[i] > nums[i + 1]) {
                 return nums[i + 1];
