@@ -1,22 +1,26 @@
-package com.fan.focusonoffer;
+package com.fan.exam.jianzhioffer;
+
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author :  PF_23
  * @Description : 复杂链表的复制
- * 输入一个复杂链表（每个节点中有节点值，以及两个指针，一个指向下一个节点，另一个特殊指针指向任意一个节点），
- * 返回结果为复制后复杂链表的 head。
- * @date : 2019/12/25.
+ * @Author : shulin.fan
+ * @Date : 2020/7/16
  */
-
 public class Num35 {
+    /**
+     * 常规思路
+     *
+     * @param head 头结点
+     * @return 新链表的头结点
+     */
     public RandomListNode cloneLinkRandomListNode(RandomListNode head) {
         if (head == null) {
             return null;
         }
-        // 插入新节点
+        // cpoy
         RandomListNode cur = head;
         while (cur != null) {
             RandomListNode clone = new RandomListNode(cur.label);
@@ -24,7 +28,7 @@ public class Num35 {
             cur.next = clone;
             cur = cur.next.next;
         }
-        // 建立 random 链接
+        // copy next
         cur = head;
         while (cur != null) {
             RandomListNode clone = cur.next;
@@ -33,8 +37,7 @@ public class Num35 {
             }
             cur = clone.next;
         }
-
-        // 拆分
+        // 拆分 ：通过画图帮助理解
         cur = head;
         RandomListNode newHead = head.next;
         while (cur.next != null) {
@@ -45,26 +48,22 @@ public class Num35 {
         return newHead;
     }
 
-    Map<RandomListNode, RandomListNode> map = new HashMap();
-
-    public RandomListNode copyRandomListByMap(RandomListNode head) {
+    public static RandomListNode copyRandomListByMap(RandomListNode head) {
         Map<RandomListNode, RandomListNode> map = new HashMap<>();
         return copy(head, map);
     }
 
-    private RandomListNode copy(RandomListNode node, Map<RandomListNode, RandomListNode> map) {
-        if (node == null) {
-            return node;
+    private static RandomListNode copy(RandomListNode head, Map<RandomListNode, RandomListNode> map) {
+        if (head == null) {
+            return head;
         }
-        if (map.containsKey(node)) {
-            return map.get(node);
+        if (map.containsKey(head)) {
+            return map.get(head);
         }
-        RandomListNode tmp = new RandomListNode(node.label);
-        map.put(node, tmp);
-        tmp.next = copy(node.next, map);
-        tmp.random = copy(node.random, map);
+        RandomListNode tmp = new RandomListNode(head.label);
+        map.put(head, tmp);
+        tmp.next = copy(head.next, map);
+        tmp.random = copy(head.random, map);
         return tmp;
-
     }
 }
-

@@ -1,16 +1,14 @@
-package com.fan.focusonoffer;
+package com.fan.exam.jianzhioffer;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
 
 /**
- * @author :  PF_23
- * @Description : 最小的 K 个数
- * 输入n个整数，找出其中最小的K个数。例如输入4,5,1,6,2,7,3,8这8个数字，则最小的4个数字是1,2,3,4,。
- * @date : 2019/12/27.
+ * @Description : 最小的K个数
+ * @Author : shulin.fan
+ * @Date : 2020/7/16
  */
-
 public class Num40 {
     /**
      * 快速排序法 复杂度：O(N) + O(1)  本方法只有当允许修改数组元素时才可以使用
@@ -24,8 +22,8 @@ public class Num40 {
      */
     public static List<Integer> GetLeastNumbers_Solution(int[] nums, int k) {
         List<Integer> res = new ArrayList<>();
-        findKthSmallest(nums, k - 1);
         /* findKthSmallest 会改变数组，使得前 k（下标为0 ~ k - 1） 个数都是最小的 k 个数 */
+        findKthSmallest(nums, k - 1);
         for (int i = 0; i < k; i++) {
             res.add(nums[i]);
         }
@@ -46,15 +44,15 @@ public class Num40 {
         }
     }
 
-    private static int partition(int[] nums, int low, int hi) {
+    private static int partition(int[] nums, int l, int h) {
+        int i = 0, j = h + 1;
         // 切分元素
-        int p = nums[low];
-        int i = low, j = hi + 1;
-        while (true) {
-            while (i != hi && nums[++i] < p) {
+        int p = nums[l];
+        while (i < j) {
+            while (i < h && nums[++i] < p) {
 
             }
-            while (j != low && nums[--j] > p) {
+            while (j > l && nums[--j] > p) {
 
             }
             if (i >= j) {
@@ -62,7 +60,7 @@ public class Num40 {
             }
             swap(nums, i, j);
         }
-        swap(nums, low, j);
+        swap(nums, l, j);
         return j;
     }
 
@@ -85,7 +83,6 @@ public class Num40 {
         if (k > nums.length || k <= 0) {
             return new ArrayList<>();
         }
-        // 小顶堆
         PriorityQueue<Integer> queue = new PriorityQueue<>(((o1, o2) -> o2 - o1));
 
         for (int i = 0; i < nums.length; i++) {
@@ -97,4 +94,3 @@ public class Num40 {
         return new ArrayList<>(queue);
     }
 }
-
