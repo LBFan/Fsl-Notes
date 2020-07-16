@@ -1,14 +1,12 @@
-package com.fan.focusonoffer;
+package com.fan.exam.jianzhioffer;
 
 /**
- * @author :  PF_23
- * @Description : 链表中倒数第 K 个结点
- * @date : 2019/12/23.
+ * @Description : 链表中倒数第K个节点
+ * @Author : shulin.fan
+ * @Date : 2020/7/15
  */
-
 public class Num22 {
-
-    public Node FindKthToTail(Node head, int k) {
+    public static Node lastKth(Node head, int k) {
         if (head == null) {
             return null;
         }
@@ -17,6 +15,7 @@ public class Num22 {
             cur = cur.next;
             k--;
         }
+
         // k值＞链表的长度
         if (k > 0) {
             return null;
@@ -28,5 +27,5 @@ public class Num22 {
         }
         return p;
     }
-}
 
+}

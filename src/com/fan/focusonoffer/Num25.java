@@ -20,7 +20,7 @@ public class Num25 {
         }
         Node p = new Node(-1);
         Node cur = p;
-        while (head1 != null || head2 != null) {
+        while (head1 != null && head2 != null) {
             if (head1.val <= head2.val) {
                 cur.next = head1;
                 head1 = head1.next;
