@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @Description : n 个骰子的点数
+ * @Description : n 个骰子的点数 好好想想过程
  * 把 n 个骰子扔在地上，求点数和为 s 的概率
  * @Author : shulin.fan
  * @Date : 2020/7/18
