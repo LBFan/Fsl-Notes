@@ -2,7 +2,7 @@ package com.fan.focusonoffer;
 
 /**
  * @author :  PF_23
- * @Description : 翻转单词顺序列
+ * @Description : 翻转单词顺序
  * Input:
  * "I am a student."
  * Output:

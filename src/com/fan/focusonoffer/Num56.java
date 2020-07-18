@@ -20,8 +20,8 @@ public class Num56 {
         for (int num : nums) {
             diff ^= num;
         }
-        // 取反
-        diff = -diff;
+        // 得到出 diff 最右侧不为 0 的位
+        diff &= -diff;
         for (int num : nums) {
             if ((diff & num) == 0) {
                 num1[0] ^= num;

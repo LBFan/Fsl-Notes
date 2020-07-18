@@ -1,4 +1,4 @@
-package com.fan.focusonoffer;
+package com.fan.exam.jianzhioffer;
 
 import java.util.AbstractMap;
 import java.util.ArrayList;
@@ -6,16 +6,12 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author :  PF_23
  * @Description : n 个骰子的点数
  * 把 n 个骰子扔在地上，求点数和为 s 的概率
- * DP
- * TODO
- * @date : 2019/12/31.
+ * @Author : shulin.fan
+ * @Date : 2020/7/18
  */
-
 public class Num60 {
-
     /**
      * 使用一个二维数组 dp 存储点数出现的次数，其中 dp[i][j] 表示前 i 个骰子产生点数 j 的次数。
      * <p>
@@ -89,6 +85,4 @@ public class Num60 {
 
         return ret;
     }
-
 }
-
