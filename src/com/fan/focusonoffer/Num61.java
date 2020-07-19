@@ -28,7 +28,7 @@ public class Num61 {
             }
             cnt -= nums[i + 1] - nums[i] + 1;
         }
-        return cnt > 0;
+        return cnt >= 0;
     }
 }
 
