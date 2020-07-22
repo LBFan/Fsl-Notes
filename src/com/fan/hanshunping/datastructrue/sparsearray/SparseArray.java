@@ -22,7 +22,6 @@ public class SparseArray {
             }
             System.out.println();
         }
-
         // 将二维数组转换成 稀疏数组
         // 1. 先遍历二维数组得到非0数据的个数
         int sum = 0;
