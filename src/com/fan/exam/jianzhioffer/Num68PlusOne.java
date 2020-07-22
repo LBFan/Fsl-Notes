@@ -1,7 +1,7 @@
 package com.fan.exam.jianzhioffer;
 
 /**
- * @Description : 普通二叉树
+ * @Description : 普通二叉树 两个节点的最低公共祖先
  * @Author : shulin.fan
  * @Date : 2020/7/19
  */
