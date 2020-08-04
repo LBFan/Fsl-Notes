@@ -42,4 +42,6 @@ public class Num24 {
         next.next = head;
         return reverseList;
     }
+
+    // 方法3 ： 栈
 }

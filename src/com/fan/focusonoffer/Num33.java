@@ -14,14 +14,14 @@ package com.fan.focusonoffer;
 public class Num33 {
     public boolean VerifySquenceOfBST(int[] sequence) {
         if (sequence == null || sequence.length == 0) {
-            return false;
+            return true;
         }
         return verify(sequence, 0, sequence.length - 1);
     }
 
     private boolean verify(int[] sequence, int first, int last) {
         // 递归遍历左右子树
-        if (last - first < 1) {
+        if (last < first) {
             return true;
         }
         int rootVal = sequence[last];
