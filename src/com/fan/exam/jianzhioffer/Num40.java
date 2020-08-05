@@ -70,6 +70,13 @@ public class Num40 {
         nums[j] = t;
     }
 
+    public static void main(String[] args) {
+        int[] nums = {1,6,7,4,5,9,8,2};
+        int k = 4;
+        List<Integer> integers = GetLeastNumbers_Solution(nums, k);
+        System.out.println(integers.toString());
+    }
+
     /**
      * 大小为 K 的最小堆  复杂度：O(NlogK) + O(K) 本方法特别适合处理海量数据
      * 应该使用大顶堆来维护最小堆，而不能直接创建一个小顶堆并设置一个大小，企图让小顶堆中的元素都是最小元素。

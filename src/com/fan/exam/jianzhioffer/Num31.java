@@ -16,7 +16,7 @@ public class Num31 {
         Stack<Integer> stack = new Stack<>();
         for (int pushIndex = 0, popIndex = 0; pushIndex < n; pushIndex++) {
             stack.push(push[pushIndex]);
-            while (pushIndex < n && !stack.isEmpty() && stack.peek() == pop[popIndex]) {
+            while (!stack.isEmpty() && stack.peek() == pop[popIndex]) {
                 stack.pop();
                 popIndex++;
             }

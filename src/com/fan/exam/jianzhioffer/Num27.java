@@ -2,6 +2,7 @@ package com.fan.exam.jianzhioffer;
 
 /**
  * @Description : 二叉树的镜像
+ * 输出镜像
  * @Author : shulin.fan
  * @Date : 2020/7/15
  */

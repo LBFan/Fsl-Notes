@@ -26,8 +26,8 @@ public class Num34 {
         path.add(root.val);
         target -= root.val;
         if (target == 0 && root.left == null && root.right == null) {
-            // 找到一条路径
-            ret.add(path);
+            // 找到一条路径 new ArrayList<>(path) !!!!!!
+            ret.add(new ArrayList<>(path));
         } else {
             if (root.left != null) {
                 backtracking(root.left, target, path);

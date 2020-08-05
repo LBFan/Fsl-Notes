@@ -22,8 +22,9 @@ public class Num37 {
     }
 
     private TreeNode Deserialize() {
-        if (deserializeStr.length() == 0)
+        if (deserializeStr.length() == 0) {
             return null;
+        }
         int index = deserializeStr.indexOf(" ");
         String node = index == -1 ? deserializeStr : deserializeStr.substring(0, index);
         deserializeStr = index == -1 ? "" : deserializeStr.substring(index + 1);

@@ -2,6 +2,7 @@ package com.fan.exam.jianzhioffer;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @Description : 字符串的排列
@@ -44,5 +45,46 @@ public class Num38 {
             s.deleteCharAt(s.length() - 1);
             hasUsed[i] = false;
         }
+    }
+
+
+    // =================================================================================
+
+    List<String> rr = new ArrayList<>();
+    char[] chars;
+
+    public String[] permutation(String s) {
+        if (s == null || s.length() == 0) return new String[0];
+        chars = s.toCharArray();
+        permute(0);
+        return rr.toArray(new String[rr.size()]);
+    }
+
+    private void permute(int index) {
+        if (index == chars.length - 1) {
+            rr.add(new String(chars));
+            return;
+        }
+        for (int i = index; i < chars.length; i++) {
+            boolean flag = false;
+            for (int j = index; j < i; j++) {
+                if (chars[j] == chars[i]) {
+                    flag = true;
+                    break;
+                }
+            }
+            if (flag) {
+                continue;
+            }
+            swap(chars, index, i);
+            permute(index + 1);
+            swap(chars, index, i);
+        }
+    }
+
+    private void swap(char[] s, int start, int end) {
+        char tmp = s[start];
+        s[start] = s[end];
+        s[end] = tmp;
     }
 }

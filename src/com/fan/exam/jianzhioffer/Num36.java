@@ -6,27 +6,28 @@ package com.fan.exam.jianzhioffer;
  * @Date : 2020/7/16
  */
 public class Num36 {
-    public TreeNode pre;
-    public TreeNode head;
-
+    TreeNode pre, head;
     public TreeNode treeToDoublyList(TreeNode root) {
-        inOrder(root);
-        return root;
+        if(root == null) {
+            return null;
+        }
+        dfs(root);
+        head.left = pre;
+        pre.right = head;
+        return head;
     }
-
-    private void inOrder(TreeNode root) {
-        if (root == null) {
+    void dfs(TreeNode cur) {
+        if(cur == null) {
             return;
         }
-        inOrder(root.left);
-        root.left = pre;
-        if (pre != null) {
-            pre.right = root;
+        dfs(cur.left);
+        if(pre != null) {
+            pre.right = cur;
+        } else {
+            head = cur;
         }
-        pre = root;
-        if (head == null) {
-            head = root;
-        }
-        inOrder(root.right);
+        cur.left = pre;
+        pre = cur;
+        dfs(cur.right);
     }
 }

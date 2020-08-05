@@ -20,6 +20,9 @@ public class Num28 {
         if (left == null || right == null) {
             return false;
         }
-        return isSymmetrical(left.left, right.left) && isSymmetrical(left.right, right.left);
+        if (left.val != right.val) {
+            return false;
+        }
+        return isSymmetrical(left.left, right.right) && isSymmetrical(left.right, right.left);
     }
 }

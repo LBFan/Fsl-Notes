@@ -14,15 +14,15 @@ public class Num26 {
     }
 
     private boolean isSubtreeWithRoot(TreeNode a, TreeNode b) {
-        if (a == null) {
-            return false;
-        }
         if (b == null) {
             return true;
+        }
+        if (a == null) {
+            return false;
         }
         if (a.val != b.val) {
             return false;
         }
-        return isSubtreeWithRoot(a.right, b.left) && isSubtreeWithRoot(a.right, b.right);
+        return isSubtreeWithRoot(a.left, b.left) && isSubtreeWithRoot(a.right, b.right);
     }
 }
