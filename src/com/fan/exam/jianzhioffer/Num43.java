@@ -1,5 +1,8 @@
 package com.fan.exam.jianzhioffer;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 /**
  * @Description : 1~n整数中1出现的次数 TODO 看看是如何计算出来的 n为几位数就统计几轮
  * @Author : shulin.fan
@@ -13,5 +16,11 @@ public class Num43 {
             cnt += (a + 8) / 10 * m + (a % 10 == 1 ? b + 1 : 0);
         }
         return cnt;
+    }
+
+    public static void main(String[] args) {
+        int n = 103;
+        int i = numberOf1Between1AndN_Solution(n);
+        System.out.println(i);
     }
 }

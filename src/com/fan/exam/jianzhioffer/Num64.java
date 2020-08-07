@@ -7,8 +7,7 @@ package com.fan.exam.jianzhioffer;
  */
 public class Num64 {
     public static int sumWithConditions(int n) {
-        int sum = 0;
-        boolean b = (n > 0) && (sum += sumWithConditions(n - 1)) > 0;
-        return sum;
+        boolean flag = n > 0 && (n += sumWithConditions(n - 1)) > 0;
+        return n;
     }
 }

@@ -16,7 +16,7 @@ public class Num55PlusOne {
     }
 
     private int height(TreeNode root) {
-        if (root == null) {
+        if (root == null || !isBalanced) {
             return 0;
         }
         int left = height(root.left);
