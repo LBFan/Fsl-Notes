@@ -1,7 +1,7 @@
 package com.fan.exam.jianzhioffer;
 
 /**
- * @Description :剪绳子
+ * @Description :剪绳子 (考虑大数)
  * @Author : shulin.fan
  * @Date : 2020/7/14
  */
@@ -17,12 +17,14 @@ public class Num14 {
             return 2;
         }
 
-        int threeTimes = n / 3;
-        if (n % 3 == 1) {
-            threeTimes--;
+        int res = 1;
+        int mod = 1000000007;
+        while (n > 4) {
+            res *= 3;
+            res %= mod;
+            n -= 3;
         }
-        int twoTimes = (n - threeTimes * 3) / 2;
-        return (int) (Math.pow(3, threeTimes) * Math.pow(2, twoTimes));
+        return (res * n % mod);
     }
 
     /**

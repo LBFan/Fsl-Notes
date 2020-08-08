@@ -6,55 +6,60 @@ package com.fan.exam.jianzhioffer;
  * @Date : 2020/7/14
  */
 public class Num12 {
-    private final static int[][] next = {{0, -1}, {0, 1}, {-1, 0}, {1, 0}};
-    private int rows;
-    private int cols;
+    boolean res = false;
+    int row, col;
 
-    public boolean hasPath(char[] array, int rows, int cols, char[] chars) {
-        if (rows == 0 || cols == 0) {
-            return false;
+    public boolean exist(char[][] board, String word) {
+        if (word.length() == 0) {
+            return res;
         }
-        this.rows = rows;
-        this.cols = cols;
-        boolean[][] marked = new boolean[rows][cols];
-        char[][] matrix = buildMatrix(array);
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                if (backtracking(matrix, chars, marked, 0, i, j)) {
-                    return true;
+        char[] words = word.toCharArray();
+        row = board.length;
+        col = board[0].length;
+        if (row * col < words.length) {
+            return res;
+        }
+        for (int i = 0; i < row && res == false; i++) {
+            //遍历board，res为true时可以直接返回了。
+            for (int j = 0; j < col; j++) {
+                if (words[0] == board[i][j]) {
+                    dfs(board, words, i, j, 0);
                 }
             }
         }
-        return false;
+        return res;
     }
 
-    private boolean backtracking(char[][] matrix, char[] chars, boolean[][] marked, int pathLen, int r, int c) {
-        if (pathLen == chars.length) {
-            return true;
+    private void dfs(char[][] board, char[] word, int i, int j, int index) {
+        //找到满足的路径或路径不正确
+        if (res || board[i][j] != word[index]) {
+            return;
         }
-        if (r < 0 || r >= rows || c < 0 || c >= cols || matrix[r][c] != chars[pathLen] || marked[r][c]) {
-            return false;
+        if (word.length - 1 == index) {
+            //找到满足的路径
+            res = true;
+            return;
         }
-        marked[r][c] = true;
-        // 遍历其上下左右位置的字符 递归查找
-        for (int[] d : next) {
-            if (backtracking(matrix, chars, marked, pathLen + 1, r + d[0], c + d[1])) {
-                return true;
-            }
+        char temp = board[i][j];
+        //标记路径
+        board[i][j] = '#';
+        //下
+        if (i + 1 < row && board[i + 1][j] != '#') {
+            dfs(board, word, i + 1, j, index + 1);
         }
-        // 回溯：循环完之后恢复为未标记
-        marked[r][c] = false;
-        // 没找到则返回false
-        return false;
-    }
-
-    private char[][] buildMatrix(char[] array) {
-        char[][] matrix = new char[rows][cols];
-        for (int i = 0, index = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                matrix[i][j] = array[index++];
-            }
+        //上
+        if (i > 0 && board[i - 1][j] != '#') {
+            dfs(board, word, i - 1, j, index + 1);
         }
-        return matrix;
+        //右
+        if (j + 1 < col && board[i][j + 1] != '#') {
+            dfs(board, word, i, j + 1, index + 1);
+        }
+        //左
+        if (j > 0 && board[i][j - 1] != '#') {
+            dfs(board, word, i, j - 1, index + 1);
+        }
+        //撤销选择
+        board[i][j] = temp;
     }
 }

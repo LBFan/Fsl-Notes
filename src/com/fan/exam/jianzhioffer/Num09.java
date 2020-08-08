@@ -1,6 +1,7 @@
 package com.fan.exam.jianzhioffer;
 
-import java.util.Stack;
+import java.util.Deque;
+import java.util.LinkedList;
 
 /**
  * @Description : 用两个栈实现队列
@@ -8,22 +9,31 @@ import java.util.Stack;
  * @Date : 2020/7/13
  */
 public class Num09 {
-    Stack<Integer> in = new Stack<>();
-    Stack<Integer> out = new Stack<>();
+    Deque<Integer> stack1;
+    Deque<Integer> stack2;
+    int size = 0;
 
-    public void push(int x) {
-        in.push(x);
+    public Num09() {
+        stack1 = new LinkedList<>();
+        stack2 = new LinkedList<>();
     }
 
-    public int pop() {
-        if (out.isEmpty()) {
-            while (!in.isEmpty()) {
-                out.push(in.pop());
+    public void appendTail(int value) {
+        stack1.push(value);
+        size++;
+    }
+
+    public int deleteHead() {
+        if (size == 0) {
+            return -1;
+        }
+        if (stack2.isEmpty()) {
+            while (!stack1.isEmpty()) {
+                stack2.push(stack1.pop());
             }
         }
-        if (out.isEmpty()) {
-            throw new RuntimeException("队列为空");
-        }
-        return out.pop();
+        size--;
+        return stack2.pop();
+
     }
 }
