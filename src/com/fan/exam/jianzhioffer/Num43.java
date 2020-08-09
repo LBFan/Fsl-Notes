@@ -10,12 +10,30 @@ import java.util.Collections;
  */
 public class Num43 {
     public static int numberOf1Between1AndN_Solution(int n) {
-        int cnt = 0;
-        for (long m = 1; m <= n; m *= 10) {
-            long a = n / m, b = n % m;
-            cnt += (a + 8) / 10 * m + (a % 10 == 1 ? b + 1 : 0);
+        //int cnt = 0;
+        //for (long m = 1; m <= n; m *= 10) {
+        //    long a = n / m, b = n % m;
+        //    cnt += (a + 8) / 10 * m + (a % 10 == 1 ? b + 1 : 0);
+        //}
+        //return cnt;
+
+        // 思路：https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/solution/mian-shi-ti-43-1n-zheng-shu-zhong-1-chu-xian-de-2/
+        int high = n / 10, cur = n % 10, digit = 1, low = 0;
+        int res = 0;
+        while (high != 0 || cur != 0) {
+            if (cur == 0) {
+                res += high * digit;
+            } else if (cur == 1) {
+                res += high * digit + low + 1;
+            } else {
+                res += (high + 1) * digit;
+            }
+            low += cur * digit;
+            cur = high % 10;
+            high /= 10;
+            digit = digit * 10;
         }
-        return cnt;
+        return res;
     }
 
     public static void main(String[] args) {

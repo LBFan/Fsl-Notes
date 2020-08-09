@@ -35,14 +35,11 @@ public class Num49 {
         return number == 1;
     }
 
-    /**改进 : 空间换时间
+    /**改进 : 空间换时间 DP
      * @param n n
      * @return
      */
-    public int getUglyNumber_Solution(int n) {
-        if (n < 6) {
-            return n;
-        }
+    public int nthUglyNumber(int n) {
         int i2 = 0, i3 = 0, i5 = 0;
         int[] dp = new int[n];
         dp[0] = 1;

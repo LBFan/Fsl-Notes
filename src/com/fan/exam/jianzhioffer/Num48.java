@@ -10,13 +10,13 @@ public class Num48 {
         int curLen = 0;
         int maxLen = 0;
 
-        int[] position = new int[26];
+        int[] position = new int[128];
         for (int i = 0; i < str.length(); i++) {
             position[i] = -1;
         }
 
         for (int i = 0; i < str.length(); i++) {
-            int prevIndex = position[str.charAt(i) - 'a'];
+            int prevIndex = position[str.charAt(i) - ' '];
             if (prevIndex < 0 || i - prevIndex > curLen) {
                 ++curLen;
             } else {
@@ -25,7 +25,7 @@ public class Num48 {
                 }
                 curLen = i - prevIndex;
             }
-            position[str.charAt(i) - 'a'] = i;
+            position[str.charAt(i) - ' '] = i;
         }
 
         return Math.max(maxLen, curLen);

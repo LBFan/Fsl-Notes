@@ -54,7 +54,9 @@ public class Num38 {
     char[] chars;
 
     public String[] permutation(String s) {
-        if (s == null || s.length() == 0) return new String[0];
+        if (s == null || s.length() == 0) {
+            return new String[0];
+        }
         chars = s.toCharArray();
         permute(0);
         return rr.toArray(new String[rr.size()]);
@@ -66,6 +68,7 @@ public class Num38 {
             return;
         }
         for (int i = index; i < chars.length; i++) {
+            // 判断是否重复
             boolean flag = false;
             for (int j = index; j < i; j++) {
                 if (chars[j] == chars[i]) {
