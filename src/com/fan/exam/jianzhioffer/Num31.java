@@ -12,16 +12,35 @@ import java.util.Stack;
  */
 public class Num31 {
     public static boolean isPopOrder(int[] push, int[] pop) {
-        int n = push.length;
-        Stack<Integer> stack = new Stack<>();
-        for (int pushIndex = 0, popIndex = 0; pushIndex < n; pushIndex++) {
-            stack.push(push[pushIndex]);
-            while (!stack.isEmpty() && stack.peek() == pop[popIndex]) {
-                stack.pop();
-                popIndex++;
-            }
-        }
+        //int n = push.length;
+        //Stack<Integer> stack = new Stack<>();
+        //for (int pushIndex = 0, popIndex = 0; pushIndex < n; pushIndex++) {
+        //    stack.push(push[pushIndex]);
+        //    while (!stack.isEmpty() && stack.peek() == pop[popIndex]) {
+        //        stack.pop();
+        //        popIndex++;
+        //    }
+        //}
+        //
+        //return stack.isEmpty();
 
-        return stack.isEmpty();
+        int i = 0, j = 0;
+        for (int e : push) {
+            push[i] = e;
+            while (i >= 0 && push[i] == pop[j]) {
+                i--;
+                j++;
+            }
+            i++;
+        }
+        return i == 0;
+    }
+
+    public static void main(String[] args) {
+        int[] push = {1, 2, 3, 4, 5};
+        int[] pop = {4, 5, 3, 2, 1};
+        boolean popOrder = isPopOrder(push, pop);
+        System.out.println(popOrder);
+
     }
 }

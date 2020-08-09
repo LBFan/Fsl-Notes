@@ -12,11 +12,11 @@ import java.util.List;
  * @Date : 2020/7/16
  */
 public class Num34 {
-    private List<List<Integer>> ret = new ArrayList<>();
+    private List<List<Integer>> res = new ArrayList<>();
 
     public List<List<Integer>> findPath(TreeNode root, int target) {
         backtracking(root, target, new ArrayList<>());
-        return ret;
+        return res;
     }
 
     private void backtracking(TreeNode root, int target, ArrayList<Integer> path) {
@@ -25,9 +25,9 @@ public class Num34 {
         }
         path.add(root.val);
         target -= root.val;
+        // 找到一条路径
         if (target == 0 && root.left == null && root.right == null) {
-            // 找到一条路径 new ArrayList<>(path) !!!!!!
-            ret.add(new ArrayList<>(path));
+            res.add(new ArrayList<>(path));
         } else {
             if (root.left != null) {
                 backtracking(root.left, target, path);
@@ -36,7 +36,8 @@ public class Num34 {
                 backtracking(root.right, target, path);
             }
         }
-        // 回溯
+
+        // back
         path.remove(path.size() - 1);
     }
 

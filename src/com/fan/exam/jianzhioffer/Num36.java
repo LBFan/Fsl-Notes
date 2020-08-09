@@ -7,8 +7,9 @@ package com.fan.exam.jianzhioffer;
  */
 public class Num36 {
     TreeNode pre, head;
+
     public TreeNode treeToDoublyList(TreeNode root) {
-        if(root == null) {
+        if (root == null) {
             return null;
         }
         dfs(root);
@@ -16,16 +17,18 @@ public class Num36 {
         pre.right = head;
         return head;
     }
+
     void dfs(TreeNode cur) {
-        if(cur == null) {
+        if (cur == null) {
             return;
         }
         dfs(cur.left);
-        if(pre != null) {
-            pre.right = cur;
+        if (pre != null) {
+            pre = cur.left;
         } else {
             head = cur;
         }
+
         cur.left = pre;
         pre = cur;
         dfs(cur.right);
