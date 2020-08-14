@@ -24,9 +24,11 @@ public class Num19 {
                 if (j == 0) {
                     f[i][j] = i == 0;
                 } else {
-                    // 字符匹配 or .
-                    if (i > 0 && (str[i - 1] == pattern[j - 1] || pattern[j - 1] == '.')) {
-                        f[i][j] = f[i - 1][j - 1];
+                    if (pattern[j - 1] != '*') {
+                        // 字符匹配 or .
+                        if (i > 0 && (str[i - 1] == pattern[j - 1] || pattern[j - 1] == '.')) {
+                            f[i][j] = f[i - 1][j - 1];
+                        }
                     } else {
                         // pattern[j - 1] == '*'
                         if (j > 1) {

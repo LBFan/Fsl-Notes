@@ -1,7 +1,7 @@
 package com.fan.exam.jianzhioffer;
 
 /**
- * @Description : 不修改数组找出其中一个重复的数字.范围在1~n的 n + 1个数字中 说明：此方法适用于时间换空间；若要空间换时间，使用hash作答
+ * @Description : 不修改数组找出其中一个重复的数字.范围在1~n的 n个数字中 说明：此方法适用于时间换空间；若要空间换时间，使用hash作答
  * @Author : shulin.fan
  * @Date : 2020/7/13
  */

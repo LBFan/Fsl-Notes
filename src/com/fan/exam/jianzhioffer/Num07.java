@@ -24,7 +24,7 @@ public class Num07 {
 
     private TreeNode reConstructBinaryTree(int[] pre, int preL, int preR, int inL) {
         if (preL > preR) {
-            // 递归退出条件
+            // 递归退出条件 !!!
             return null;
         }
         TreeNode root = new TreeNode(pre[preL]);

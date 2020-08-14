@@ -21,4 +21,10 @@ public class Num66 {
         }
         return B;
     }
+
+    public static void main(String[] args) {
+        int[] nums = {1,2,3,4};
+        int[] multiply = multiply(nums);
+        multiply.toString();
+    }
 }

@@ -68,7 +68,6 @@ public class Num38 {
             return;
         }
         for (int i = index; i < chars.length; i++) {
-            // 判断是否重复
             boolean flag = false;
             for (int j = index; j < i; j++) {
                 if (chars[j] == chars[i]) {
@@ -76,9 +75,11 @@ public class Num38 {
                     break;
                 }
             }
+
             if (flag) {
                 continue;
             }
+
             swap(chars, index, i);
             permute(index + 1);
             swap(chars, index, i);

@@ -22,7 +22,7 @@ public class Num20 {
             return false;
         }
         // 标记是否遇到数位、小数点、‘e’或'E'
-        boolean isNum = false, isDot = false, ise_or_E = false;
+        boolean isNum = false, isDot = false, isE_or_e = false;
         // 转为字符数组，遍历判断每个字符
         char[] str = s.trim().toCharArray();
         for (int i = 0; i < str.length; i++) {
@@ -32,17 +32,17 @@ public class Num20 {
             } else if (str[i] == '.') {
                 // 遇到小数点
                 // 小数点之前可以没有整数，但是不能重复出现小数点、或出现‘e’、'E'
-                if (isDot || ise_or_E) {
+                if (isDot || isE_or_e) {
                     return false;
                 }
                 // 标记已经遇到小数点
                 isDot = true;
             } else if (str[i] == 'e' || str[i] == 'E') {
                 // 遇到‘e’或'E'
-                if (!isNum || ise_or_E) {
+                if (!isNum || isE_or_e) {
                     // ‘e’或'E'前面必须有整数，且前面不能重复出现‘e’或'E'return false;
                     // 标记已经遇到‘e’或'E'
-                    ise_or_E = true;
+                    isE_or_e = true;
                 }
                 // 重置isNum，因为‘e’或'E'之后也必须接上整数，防止出现 123e或者123e+的非法情况
                 isNum = false;

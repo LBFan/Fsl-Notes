@@ -7,24 +7,31 @@ package com.fan.exam.jianzhioffer;
  */
 public class Num14 {
     public static int integerBreak(int n) {
-        if (n < 2) {
-            return 0;
-        }
-        if (n == 2) {
-            return 1;
-        }
-        if (n == 3) {
-            return 2;
+        if (n <= 3) {
+            return n - 1;
         }
 
-        int res = 1;
+        long res = 1;
         int mod = 1000000007;
         while (n > 4) {
             res *= 3;
             res %= mod;
             n -= 3;
         }
-        return (res * n % mod);
+        return (int) (res * n % mod);
+
+        //if(n <= 3) {
+        //    return n - 1;
+        //}
+        //int a = n / 3, b = n % 3;
+        //if(b == 0) {
+        //    return (int)Math.pow(3, a);
+        //}
+        //if(b == 1) {
+        //    return (int)Math.pow(3, a - 1) * 4;
+        //}
+        //return (int)Math.pow(3, a) * 2;
+
     }
 
     /**

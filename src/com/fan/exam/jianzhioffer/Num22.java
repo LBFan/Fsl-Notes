@@ -7,25 +7,37 @@ package com.fan.exam.jianzhioffer;
  */
 public class Num22 {
     public static Node lastKth(Node head, int k) {
-        if (head == null) {
-            return null;
-        }
-        Node cur = head;
-        while (cur != null && k > 0) {
-            cur = cur.next;
-            k--;
-        }
+        //if (head == null) {
+        //    return null;
+        //}
+        //Node cur = head;
+        //while (cur != null && k > 0) {
+        //    cur = cur.next;
+        //    k--;
+        //}
+        //
+        //// k值＞链表的长度
+        //if (k > 0) {
+        //    return null;
+        //}
+        //Node p = head;
+        //while (cur != null) {
+        //    p = p.next;
+        //    cur = cur.next;
+        //}
+        //return p;
 
-        // k值＞链表的长度
-        if (k > 0) {
-            return null;
+        // 暂不考虑越界
+        Node fast = head, slow = head;
+        int t = 0;
+        while (fast != null) {
+            if (t >= k) {
+                slow = slow.next;
+            }
+            fast = fast.next;
+            t++;
         }
-        Node p = head;
-        while (cur != null) {
-            p = p.next;
-            cur = cur.next;
-        }
-        return p;
+        return slow;
     }
 
 }

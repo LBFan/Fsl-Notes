@@ -19,7 +19,7 @@ public class Num09 {
     }
 
     public void appendTail(int value) {
-        stack1.push(value);
+        stack1.addLast(value);
         size++;
     }
 
@@ -29,11 +29,10 @@ public class Num09 {
         }
         if (stack2.isEmpty()) {
             while (!stack1.isEmpty()) {
-                stack2.push(stack1.pop());
+                stack2.addLast(stack1.removeLast());
             }
         }
         size--;
-        return stack2.pop();
-
+        return stack2.removeLast();
     }
 }

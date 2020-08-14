@@ -13,21 +13,51 @@ import java.util.PriorityQueue;
  * @Date : 2020/7/18
  */
 public class Num59 {
-    public List<Integer> maxInWindows(int[] num, int k) {
-        List<Integer> res = new ArrayList<>();
+    public int[] maxInWindows(int[] num, int k) {
+        //List<Integer> res = new ArrayList<>();
+        //
+        //// 大顶堆
+        //PriorityQueue<Integer> queue = new PriorityQueue<>((o1, o2) -> o2 - o1);
+        //// 堆大小为K
+        //for (int i = 0; i < k; i++) {
+        //    queue.add(num[i]);
+        //}
+        //res.add(queue.peek());
+        //for (int i = 0, j = i + k; j < num.length; i++, j++) {
+        //    queue.remove(num[i]);
+        //    queue.add(num[j]);
+        //    res.add(queue.peek());
+        //}
+        //return res;
 
-        // 大顶堆
-        PriorityQueue<Integer> queue = new PriorityQueue<>((o1, o2) -> o2 - o1);
-        // 堆大小为K
-        for (int i = 0; i < k; i++) {
-            queue.add(num[i]);
+        int numLen = num.length;
+        if (numLen == 0) {
+            return new int[0];
         }
-        res.add(queue.peek());
-        for (int i = 0, j = i + k; j < num.length; i++, j++) {
-            queue.remove(num[i]);
-            queue.add(num[j]);
-            res.add(queue.peek());
+        // 保存结果
+        int[] ans = new int[numLen - k + 1];
+        // 左指针
+        int left = 0;
+        // 右指针
+        int right = k - 1;
+        // 最大值指针
+        int max = -1;
+
+        while (right < numLen) {
+            if (max < left) {
+                // 更新最大值
+                max = left;
+                for (int i = left; i <= right; i++) {
+                    max = num[max] < num[i] ? i : max;
+                }
+            } else {
+                // 更新最大值
+                max = num[max] < num[right] ? right : max;
+            }
+            ans[left] = num[max];
+            left++;
+            right++;
         }
-        return res;
+        return ans;
     }
 }

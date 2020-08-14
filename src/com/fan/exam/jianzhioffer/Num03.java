@@ -1,7 +1,7 @@
 package com.fan.exam.jianzhioffer;
 
 /**
- * @Description :
+ * @Description : 数组中重复的数字
  * @Author : shulin.fan
  * @Date : 2020/7/13
  */

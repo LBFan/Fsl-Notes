@@ -6,7 +6,8 @@ package com.fan.exam.jianzhioffer;
  * @Date : 2020/7/15
  */
 public class Num24 {
-    /** 头插法
+    /**
+     * 头插法
      *
      * @param head 头结点
      * @return 逆序头结点
@@ -36,10 +37,9 @@ public class Num24 {
             return head;
         }
 
-        Node next = head.next;
+        Node reverseList = ReverseList(head.next);
+        head.next.next = head;
         head.next = null;
-        Node reverseList = ReverseList(next);
-        next.next = head;
         return reverseList;
     }
 

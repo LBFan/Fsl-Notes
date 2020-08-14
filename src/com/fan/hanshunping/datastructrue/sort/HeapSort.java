@@ -61,7 +61,7 @@ public class HeapSort {
         int temp = arr[i];
         //开始调整
         //说明
-        //1.k=i*2+1k 是 i结点的左子结点
+        //1.k=i*2+1 k 是 i结点的左子结点
         for (int k = i * 2 + 1; k < length; k = k * 2 + 1) {
             //说明左子结点的值小于右子结点的值
             if (k + 1 < length && arr[k] < arr[k + 1]) {

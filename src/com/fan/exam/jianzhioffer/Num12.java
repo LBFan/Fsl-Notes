@@ -19,7 +19,7 @@ public class Num12 {
         if (row * col < words.length) {
             return res;
         }
-        for (int i = 0; i < row && res == false; i++) {
+        for (int i = 0; i < row && !res; i++) {
             //遍历board，res为true时可以直接返回了。
             for (int j = 0; j < col; j++) {
                 if (words[0] == board[i][j]) {
