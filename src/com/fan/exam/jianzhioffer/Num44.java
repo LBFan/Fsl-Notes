@@ -23,8 +23,8 @@ public class Num44 {
         //确定 nn 是 numnum 中的哪一数位，并返回结果
 
         int digit = 1;
-        int start = 1;
-        int count = 9;
+        long start = 1;
+        long count = 9;
         // 1.
         while (n > count) {
             n -= count;

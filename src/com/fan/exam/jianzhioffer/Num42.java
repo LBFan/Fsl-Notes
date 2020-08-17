@@ -19,5 +19,4 @@ public class Num42 {
         return generateSum;
     }
 
-    ps
 }
