@@ -26,4 +26,14 @@ public class Num41PlusOne {
         return queue.isEmpty() ? '#' : queue.peek();
     }
 
+    public static void main(String[] args) {
+        String str = "ababababcabe";
+        for (char ch : str.toCharArray()) {
+            insert(ch);
+        }
+
+        char firstAppearing = firstAppearingOnce();
+        System.out.println(firstAppearing);
+    }
+
 }

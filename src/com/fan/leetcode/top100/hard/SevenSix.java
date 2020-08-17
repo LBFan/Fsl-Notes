@@ -51,7 +51,7 @@ public class SevenSix {
                     minLen = (r - l) + 1;
                     begin = l;
                 }
-                win[l]--;
+                win[ch]--;
                 l++;
             }
             // 向右滑动右边界
@@ -61,6 +61,13 @@ public class SevenSix {
             return "";
         }
         return s.substring(begin, begin + minLen);
+    }
+
+
+    public static void main(String[] args) {
+        String ss = " abdC hh ";
+        String toLowerCase = ss.toLowerCase();
+        System.out.println(toLowerCase);
     }
 }
 
