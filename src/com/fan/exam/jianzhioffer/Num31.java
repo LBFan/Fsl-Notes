@@ -11,19 +11,34 @@ import java.util.Stack;
  * @Date : 2020/7/16
  */
 public class Num31 {
+    /**
+     * 我的解法
+     *
+     * @param push
+     * @param pop
+     * @return
+     */
     public static boolean isPopOrder(int[] push, int[] pop) {
-        //int n = push.length;
-        //Stack<Integer> stack = new Stack<>();
-        //for (int pushIndex = 0, popIndex = 0; pushIndex < n; pushIndex++) {
-        //    stack.push(push[pushIndex]);
-        //    while (!stack.isEmpty() && stack.peek() == pop[popIndex]) {
-        //        stack.pop();
-        //        popIndex++;
-        //    }
-        //}
-        //
-        //return stack.isEmpty();
+        int n = push.length;
+        Stack<Integer> stack = new Stack<>();
+        for (int pushIndex = 0, popIndex = 0; pushIndex < n; pushIndex++) {
+            stack.push(push[pushIndex]);
+            while (!stack.isEmpty() && stack.peek() == pop[popIndex]) {
+                stack.pop();
+                popIndex++;
+            }
+        }
+        return stack.isEmpty();
+    }
 
+    /**
+     * 大神的解法
+     *
+     * @param push
+     * @param pop
+     * @return
+     */
+    public static boolean isPopOrder2(int[] push, int[] pop) {
         int i = 0, j = 0;
         for (int e : push) {
             push[i] = e;

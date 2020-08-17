@@ -5,7 +5,7 @@ import java.util.Queue;
 
 /**
  * @Description : 字符流中第一个不重复的字符
- * 思路： 双端队列解决
+ * 思路： 双端队列解决  （哈希备用）
  * @Author : shulin.fan
  * @Date : 2020/7/17
  */

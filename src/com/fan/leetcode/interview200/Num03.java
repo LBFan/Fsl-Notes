@@ -30,24 +30,38 @@ import java.util.Set;
  * @Date : 2020/8/3
  */
 public class Num03 {
-    public int lengthOfLongestSubstring(String s) {
-        // set
-        Set<Character> set = new HashSet<>();
-        int n = s.length();
-        // 右边界初始为-1， 最长长度初始为0
-        int rk = -1, ans = 0;
+    public static int lengthOfLongestSubstring(String s) {
+        //// set
+        //Set<Character> set = new HashSet<>();
+        //int n = s.length();
+        //// 右边界初始为-1， 最长长度初始为0
+        //int rk = -1, ans = 0;
+        //
+        //for (int i = 0; i < n; i++) {
+        //    if (i != 0) {
+        //        // 移除左边字符
+        //        set.remove(s.charAt(i));
+        //    }
+        //    while (rk + 1 < n && !set.contains(s.charAt(rk + 1))) {
+        //        set.add(s.charAt(rk + 1));
+        //        rk++;
+        //    }
+        //    ans = Math.max(ans, rk - i + 1);
+        //}
 
-        for (int i = 0; i < n; i++) {
-            if (i != 0) {
-                // 移除左边字符
-                set.remove(s.charAt(i));
-            }
-            while (rk + 1 < n && !set.contains(s.charAt(rk + 1))) {
-                set.add(s.charAt(rk + 1));
-                rk++;
-            }
-            ans = Math.max(ans, rk - i + 1);
+        int ans = 0, n = s.length();
+        int[] index = new int[128];
+        for (int i = 0, j = 0; j < n; ++j) {
+            i = Math.max(i, index[s.charAt(j)]);
+            ans = Math.max(ans, j - i + 1);
+            index[s.charAt(j)] = j + 1;
         }
         return ans;
+    }
+
+    public static void main(String[] args) {
+        String s = "abcabcbb";
+        int lengthOfLongestSubstring = lengthOfLongestSubstring(s);
+        System.out.println(lengthOfLongestSubstring);
     }
 }

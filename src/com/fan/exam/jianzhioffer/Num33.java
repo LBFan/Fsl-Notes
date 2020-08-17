@@ -20,15 +20,15 @@ public class Num33 {
             return true;
         }
         // 找左子树
-        int i = 0;
-        while (i < last && sequence[i++] < sequence[last]) {
+        int index = 0;
+        while (index < last && sequence[index++] < sequence[last]) {
 
         }
-        for (int j = i; j < last; j++) {
+        for (int j = index; j < last; j++) {
             if (sequence[j] < sequence[last]) {
                 return false;
             }
         }
-        return verify(sequence, first, i - 1) && verify(sequence, i, last - 1);
+        return verify(sequence, first, index - 1) && verify(sequence, index, last - 1);
     }
 }

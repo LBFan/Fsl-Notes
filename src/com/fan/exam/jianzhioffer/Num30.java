@@ -1,5 +1,7 @@
 package com.fan.exam.jianzhioffer;
 
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.Stack;
 
 /**
@@ -8,8 +10,8 @@ import java.util.Stack;
  * @Date : 2020/7/15
  */
 public class Num30 {
-    private Stack<Integer> dataStack = new Stack<>();
-    private Stack<Integer> minStack = new Stack<>();
+    private Deque<Integer> dataStack = new LinkedList<>();
+    private Deque<Integer> minStack = new LinkedList<>();
 
     public void push(int node) {
         dataStack.push(node);

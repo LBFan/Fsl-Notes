@@ -13,16 +13,16 @@ public class Num07 {
     /**
      * 缓存中序遍历数组每个值对应的索引
      */
-    private Map<Integer, Integer> indexForInOrders = new HashMap<>();
+    private static Map<Integer, Integer> indexForInOrders = new HashMap<>();
 
-    public TreeNode reConstructBinaryTree(int[] pre, int[] in) {
+    public static TreeNode reConstructBinaryTree(int[] pre, int[] in) {
         for (int i = 0; i < in.length; i++) {
             indexForInOrders.put(in[i], i);
         }
         return reConstructBinaryTree(pre, 0, pre.length - 1, 0);
     }
 
-    private TreeNode reConstructBinaryTree(int[] pre, int preL, int preR, int inL) {
+    private static TreeNode reConstructBinaryTree(int[] pre, int preL, int preR, int inL) {
         if (preL > preR) {
             // 递归退出条件 !!!
             return null;
@@ -34,5 +34,12 @@ public class Num07 {
 //        root.right = reConstructBinaryTree(pre, preL + leftTreeSize + 1, preR, inL + leftTreeSize + 1);
         root.right = reConstructBinaryTree(pre, preL + leftTreeSize + 1, preR, inIndex + 1);
         return root;
+    }
+
+    public static void main(String[] args) {
+        int[] in = {2, 1, 3};
+        int[] pre = {1, 2, 3};
+        TreeNode treeNode = reConstructBinaryTree(in, pre);
+
     }
 }

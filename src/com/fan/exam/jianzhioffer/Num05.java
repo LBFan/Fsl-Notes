@@ -45,8 +45,7 @@ public class Num05 {
                 array[size++] = c;
             }
         }
-        String newStr = new String(array, 0, size);
-        return newStr;
+        return new String(array, 0, size);
     }
 
 

@@ -10,15 +10,20 @@ public class Num16 {
         if (exponent == 0) {
             return 1;
         }
-        if (base == 1) {
-            return base;
+        long b = exponent;
+        if (b < 0) {
+            b = -b;
+            base = 1 / base;
         }
-        // 注意边界,正负数
-        boolean isNegative = (base > 0);
-        double res = powerWithUnsignedExponent(base * base, exponent >> 1);
-        if (exponent % 2 == 1) {
-            res *= base;
+
+        double res = 1.0;
+        while (b != 0) {
+            if ((b & 1) == 1) {
+                res *= base;
+            }
+            base *= base;
+            b >>= 1;
         }
-        return isNegative ? res : 1 / res;
+        return res;
     }
 }

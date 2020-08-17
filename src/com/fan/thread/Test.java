@@ -17,10 +17,21 @@ public class Test {
 //        int t = m / n;
 //        System.out.println(t);
 //
-        int a = 3;
-        int swap = swap(a);
-        System.out.println(a);
+//        int a = 3;
+//        int swap = swap(a);
+//        System.out.println(a);
+
+        int i = 0;
+        while (true) {
+            // 死循环
+            i++;
+            if (i == Integer.MAX_VALUE) {
+                System.out.println("reset");
+            }
+            i = 0;
+        }
     }
+
     public static int get(int node, int k) {
         int sum = (int) (node - Math.pow(2, k) + 1);
         if (sum >= 0) {

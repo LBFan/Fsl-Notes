@@ -20,7 +20,7 @@ public class Num35 {
         if (head == null) {
             return null;
         }
-        // cpoy
+        // copy
         RandomListNode cur = head;
         while (cur != null) {
             RandomListNode clone = new RandomListNode(cur.label);
@@ -28,7 +28,7 @@ public class Num35 {
             cur.next = clone;
             cur = cur.next.next;
         }
-        // copy next
+        // copy random
         cur = head;
         while (cur != null) {
             RandomListNode clone = cur.next;
@@ -48,14 +48,22 @@ public class Num35 {
         return newHead;
     }
 
+
+    /**
+     * 递归法
+     *
+     * @param head
+     * @return
+     */
     public static RandomListNode copyRandomListByMap(RandomListNode head) {
         Map<RandomListNode, RandomListNode> map = new HashMap<>();
         return copy(head, map);
     }
 
+
     private static RandomListNode copy(RandomListNode head, Map<RandomListNode, RandomListNode> map) {
         if (head == null) {
-            return head;
+            return null;
         }
         if (map.containsKey(head)) {
             return map.get(head);

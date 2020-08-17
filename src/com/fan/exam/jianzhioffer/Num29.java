@@ -19,28 +19,36 @@ public class Num29 {
             for (int i = c1; i <= c2; i++) {
                 ret.add(matrix[r1][i]);
             }
+            r1++;
             // 上 —> 下
-            for (int i = r1 + 1; i <= r2; i++) {
+            for (int i = r1; i <= r2; i++) {
                 ret.add(matrix[i][c2]);
             }
+            c2--;
             if (r1 != r2) {
                 // 右 -> 左
-                for (int i = c2 - 1; i >= c1; i--) {
+                for (int i = c2; i >= c1; i--) {
                     ret.add(matrix[r2][i]);
                 }
+                r2--;
             }
             if (c1 != c2) {
                 // 下 -> 上
-                for (int i = r2 - 1; i > r1; i--) {
+                for (int i = r2; i > r1; i--) {
                     ret.add(matrix[i][c1]);
                 }
+                c1++;
             }
-            r1++;
-            c1++;
-            r2--;
-            c2--;
         }
         return ret;
+    }
+
+    public static void main(String[] args) {
+        int[][] nums = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        List<Integer> integers = printMatrix(nums);
+        for (int num : integers) {
+            System.out.print(num + " ");
+        }
     }
 
 }

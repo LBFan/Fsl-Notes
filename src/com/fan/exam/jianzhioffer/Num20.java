@@ -12,11 +12,6 @@ package com.fan.exam.jianzhioffer;
  */
 public class Num20 {
     public static boolean isNumeric(String s) {
-        /// if (str == null || str.length == 0) {
-        //    return false;
-        //}
-        //return new String(str).matches("[+-]?\\d*(\\d.\\d+)?([eE][+-]?\\d+)?");
-
         // s为空对象或 s长度为0(空字符串)时, 不能表示数值
         if (s == null || s.length() == 0) {
             return false;
@@ -44,7 +39,7 @@ public class Num20 {
                     // 标记已经遇到‘e’或'E'
                     isE_or_e = true;
                 }
-                // 重置isNum，因为‘e’或'E'之后也必须接上整数，防止出现 123e或者123e+的非法情况
+                // todo !!!重置isNum，因为‘e’或'E'之后也必须接上整数，防止出现 123e或者123e+的非法情况
                 isNum = false;
             } else if (str[i] == '-' || str[i] == '+') {
                 if (i != 0 && str[i - 1] != 'e' && str[i - 1] != 'E') {

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @Description : 字符串的排列
+ * @Description : TODO 字符串的排列
  * @Author : shulin.fan
  * @Date : 2020/7/16
  */
@@ -75,11 +75,11 @@ public class Num38 {
                     break;
                 }
             }
-
+            // 重复就跳过
             if (flag) {
                 continue;
             }
-
+            // 重点理解这个过程
             swap(chars, index, i);
             permute(index + 1);
             swap(chars, index, i);
