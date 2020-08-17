@@ -27,7 +27,7 @@ public class Num41PlusOne {
     }
 
     public static void main(String[] args) {
-        String str = "abababeabc";
+        String str = "abababec";
         for (char ch : str.toCharArray()) {
             insert(ch);
         }
