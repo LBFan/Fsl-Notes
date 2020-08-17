@@ -6,7 +6,7 @@ package com.fan.leetcode;
  * @Date : 2020/8/17
  */
 public class Eight {
-    public String longestCommonPrefix(String[] strs) {
+    public static String longestCommonPrefix(String[] strs) {
         // 方法一： 水平扫描
         if (strs.length == 0) {
             return "";
@@ -21,5 +21,11 @@ public class Eight {
             }
         }
         return prefix;
+    }
+
+    public static void main(String[] args) {
+        String[] strs = {"flower", "flew", "fltyu"};
+        String longestCommonPrefix = longestCommonPrefix(strs);
+        System.out.println(longestCommonPrefix);
     }
 }
