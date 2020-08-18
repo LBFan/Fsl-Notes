@@ -1,4 +1,4 @@
-package com.fan.leetcode.interview200;
+package com.fan.leetcode.favorate;
 
 /**
  * @Description : 最长回文子串

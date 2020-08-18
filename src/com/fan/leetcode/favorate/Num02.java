@@ -1,6 +1,4 @@
-package com.fan.leetcode.interview200;
-
-import java.util.List;
+package com.fan.leetcode.favorate;
 
 /**
  * @Description : 两数相加

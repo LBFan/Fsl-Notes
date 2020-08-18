@@ -1,4 +1,4 @@
-package com.fan.leetcode.interview200;
+package com.fan.leetcode.favorate;
 
 import java.util.HashMap;
 import java.util.Map;
