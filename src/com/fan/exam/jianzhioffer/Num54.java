@@ -18,12 +18,12 @@ public class Num54 {
         if (root == null || cnt > k) {
             return;
         }
-        inOrder(root.left, k);
+        inOrder(root.right, k);
         cnt++;
         if (cnt == k) {
             ret = root;
             return;
         }
-        inOrder(root.right, k);
+        inOrder(root.left, k);
     }
 }

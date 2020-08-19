@@ -9,7 +9,7 @@ import java.util.Map;
  * @Date : 2020/7/17
  */
 public class Num48 {
-    public static int longestSubStringWithoutDuplication(String str) {
+    public static int longestSubStringWithoutDuplication(String s) {
         //int curLen = 0;
         //int maxLen = 0;
         //
@@ -33,20 +33,35 @@ public class Num48 {
         //
         ///return Math.max(maxLen, curLen);
 
-        Map<Character, Integer> dic = new HashMap<>();
+        //Map<Character, Integer> dic = new HashMap<>();
+        //int res = 0;
+        //int tmp = 0;
+        //for (int i = 0; i < str.length(); i++) {
+        //    int j = dic.getOrDefault(str.charAt(i), -1);
+        //    dic.put(str.charAt(i), i);
+        //    tmp = tmp < i - j ? tmp + 1 : i - j;
+        //    res = Math.max(res, tmp);
+        //}
+        //return res;
+
+        if (s == null || s.length() == 0) {
+            return 0;
+        }
+        Map<Character, Integer> map = new HashMap<>();
+        int i = -1;
         int res = 0;
-        int tmp = 0;
-        for (int i = 0; i < str.length(); i++) {
-            int j = dic.getOrDefault(str.charAt(i), -1);
-            dic.put(str.charAt(i), i);
-            tmp = tmp < i - j ? tmp + 1 : i - j;
-            res = Math.max(res, tmp);
+        for (int j = 0; j < s.length(); ++j) {
+            if (map.containsKey(s.charAt(j))) {
+                i = Math.max(map.get(s.charAt(j)), i);
+            }
+            map.put(s.charAt(j), j);
+            res = Math.max(res, j - i);
         }
         return res;
     }
 
     public static void main(String[] args) {
-        String str = "aasdfgsdf";
+        String str = "pwwkew";
         int i = longestSubStringWithoutDuplication(str);
         System.out.println(i);
     }
