@@ -14,7 +14,7 @@ public class Num47 {
         int[] dp = new int[n];
         for (int[] value : values) {
             dp[0] += value[0];
-            for (int i = 0; i < n; i++) {
+            for (int i = 1; i < n; i++) {
                 dp[i] = Math.max(dp[i], dp[i - 1]) + value[i];
             }
         }
