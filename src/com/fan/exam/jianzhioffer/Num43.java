@@ -37,7 +37,7 @@ public class Num43 {
     }
 
     public static void main(String[] args) {
-        int n = 103;
+        int n = 2048;
         int i = numberOf1Between1AndN_Solution(n);
         System.out.println(i);
     }

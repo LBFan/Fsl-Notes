@@ -36,11 +36,12 @@ public class Num20 {
                 // 遇到‘e’或'E'
                 if (!isNum || isE_or_e) {
                     // ‘e’或'E'前面必须有整数，且前面不能重复出现‘e’或'E'return false;
-                    // 标记已经遇到‘e’或'E'
-                    isE_or_e = true;
+                    return false;
                 }
                 // todo !!!重置isNum，因为‘e’或'E'之后也必须接上整数，防止出现 123e或者123e+的非法情况
                 isNum = false;
+                // 标记已经遇到‘e’或'E'
+                isE_or_e = true;
             } else if (str[i] == '-' || str[i] == '+') {
                 if (i != 0 && str[i - 1] != 'e' && str[i - 1] != 'E') {
                     // 正负号只可能出现在第一个位置，或者出现在‘e’或'E'的后面一个位置
