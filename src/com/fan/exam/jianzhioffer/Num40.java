@@ -20,7 +20,7 @@ public class Num40 {
      * @param k    个数
      * @return 前k个数的集合
      */
-    public static List<Integer> GetLeastNumbers_Solution(int[] nums, int k) {
+    public static List<Integer> getLeastNumbersSolution(int[] nums, int k) {
         List<Integer> res = new ArrayList<>();
         /* findKthSmallest 会改变数组，使得前 k（下标为0 ~ k - 1） 个数都是最小的 k 个数 */
         findKthSmallest(nums, k - 1);
@@ -45,7 +45,7 @@ public class Num40 {
     }
 
     private static int partition(int[] nums, int l, int h) {
-        int i = 0, j = h + 1;
+        int i = l, j = h + 1;
         // 切分元素
         int p = nums[l];
         while (i < j) {
@@ -73,7 +73,7 @@ public class Num40 {
     public static void main(String[] args) {
         int[] nums = {1,6,7,4,5,9,8,2};
         int k = 4;
-        List<Integer> integers = GetLeastNumbers_Solution(nums, k);
+        List<Integer> integers = getLeastNumbersSolution(nums, k);
         System.out.println(integers.toString());
     }
 
@@ -90,7 +90,7 @@ public class Num40 {
         if (k > nums.length || k <= 0) {
             return new ArrayList<>();
         }
-        PriorityQueue<Integer> queue = new PriorityQueue<>(((o1, o2) -> o2 - o1));
+        PriorityQueue<Integer> queue = new PriorityQueue<>((o1, o2) -> o2 - o1);
 
         for (int i = 0; i < nums.length; i++) {
             queue.add(nums[i]);

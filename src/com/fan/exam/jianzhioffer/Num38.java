@@ -25,6 +25,13 @@ public class Num38 {
         return ret;
     }
 
+    /**
+     * 容易理解
+     *
+     * @param chars
+     * @param hasUsed
+     * @param s
+     */
     private static void backtracking(char[] chars, boolean[] hasUsed, StringBuilder s) {
         if (chars.length == s.length()) {
             ret.add(s.toString());

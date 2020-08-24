@@ -1,6 +1,7 @@
 package com.fan.exam.jianzhioffer;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -9,7 +10,13 @@ import java.util.List;
  * @Date : 2020/7/18
  */
 public class Num57PlusOne {
-    public List<List<Integer>> findContinuousSequence(int sum) {
+    /**
+     * 常规 （滑动窗口）
+     *
+     * @param sum
+     * @return
+     */
+    public List<List<Integer>> findContinuousSequenceNormal(int sum) {
         List<List<Integer>> res = new ArrayList<>();
         int start = 1, end = 2;
         int curSum = 3;
@@ -37,5 +44,30 @@ public class Num57PlusOne {
             }
         }
         return res;
+    }
+
+    /**
+     * 优化
+     *
+     * @param target
+     * @return
+     */
+    public int[][] findContinuousSequence(int target) {
+        List<int[]> list = new ArrayList<>();
+        // n代表能组成和为target的连续数字个数
+        int n = 1;
+        while (target > 0) {
+            target -= n++;
+            if (target > 0 && target % n == 0) {
+                int[] tmp = new int[n];
+                int start = target / n;
+                for (int i = 0; i < n; ++i) {
+                    tmp[i] = start++;
+                }
+                list.add(tmp);
+            }
+        }
+        Collections.reverse(list);
+        return list.toArray(new int[0][]);
     }
 }

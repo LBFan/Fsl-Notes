@@ -7,14 +7,14 @@ package com.fan.exam.jianzhioffer;
  * @Date : 2020/7/16
  */
 public class Num39 {
-    public static int MoreThanHalfNum_Solution(int[] nums) {
+    public static int moreThanHalfNum_Solution(int[] nums) {
         int majority = nums[0];
         for (int i = 1, cnt = 1; i < nums.length; i++) {
+            cnt = (majority == nums[i]) ? cnt + 1 : cnt - 1;
             if (cnt == 0) {
                 cnt = 1;
                 majority = nums[i];
             }
-            cnt = (majority == nums[i]) ? cnt + 1 : cnt - 1;
         }
         int count = 0;
         for (int num : nums) {
@@ -25,9 +25,26 @@ public class Num39 {
         return count > nums.length / 2 ? majority : -1;
     }
 
+    /**
+     * 大神解法
+     *
+     * @param nums
+     * @return
+     */
+    public int majorityElement(int[] nums) {
+        int x = 0, votes = 0;
+        for (int num : nums) {
+            if (votes == 0) {
+                x = num;
+            }
+            votes += num == x ? 1 : -1;
+        }
+        return x;
+    }
+
     public static void main(String[] args) {
         int[] nums = {1, 2, 3, 2, 2, 2, 5, 4, 2};
-        int i = MoreThanHalfNum_Solution(nums);
+        int i = moreThanHalfNum_Solution(nums);
         System.out.println(i);
     }
 }
