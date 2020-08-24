@@ -29,7 +29,7 @@ public class Num10 {
      * @param n n
      * @return fib
      */
-    public int fib(int n) {
+    public static int fib(int n) {
         int a = 0, b = 1, sum;
         for (int i = 0; i < n; i++) {
             sum = (a + b) % 1000000007;
@@ -39,4 +39,8 @@ public class Num10 {
         return a;
     }
 
+    public static void main(String[] args) {
+        int fib = fib(2);
+        System.out.println(fib);
+    }
 }

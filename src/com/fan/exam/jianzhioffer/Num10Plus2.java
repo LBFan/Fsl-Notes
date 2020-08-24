@@ -14,17 +14,29 @@ package com.fan.exam.jianzhioffer;
 
 public class Num10Plus2 {
     public static int RectCover(int n) {
-        if (n <= 2) {
-            return n;
+        //if (n <= 2) {
+        //    return n;
+        //}
+        //int pre1 = 1, pre2 = 2;
+        //int res = 0;
+        //for (int i = 3; i <= n; i++) {
+        //    res = pre1 + pre2;
+        //    pre1 = pre2;
+        //    pre2 = res;
+        //}
+        //return res;
+        int a = 1, b = 1, sum;
+        for (int i = 0; i < n; i++) {
+            sum = (a + b) % 1000000007;
+            a = b;
+            b = sum;
         }
-        int pre1 = 1, pre2 = 2;
-        int res = 0;
-        for (int i = 3; i <= n; i++) {
-            res = pre1 + pre2;
-            pre1 = pre2;
-            pre2 = res;
-        }
-        return res;
+        return a;
+    }
+
+    public static void main(String[] args) {
+        int rectCover = RectCover(1);
+        System.out.println(rectCover);
     }
 }
 

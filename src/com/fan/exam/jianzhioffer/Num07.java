@@ -31,8 +31,8 @@ public class Num07 {
         Integer inIndex = indexForInOrders.get(root.val);
         int leftTreeSize = inIndex - inL;
         root.left = reConstructBinaryTree(pre, preL + 1, preL + leftTreeSize, inL);
-//        root.right = reConstructBinaryTree(pre, preL + leftTreeSize + 1, preR, inL + leftTreeSize + 1);
-        root.right = reConstructBinaryTree(pre, preL + leftTreeSize + 1, preR, inIndex + 1);
+        root.right = reConstructBinaryTree(pre, preL + leftTreeSize + 1, preR, inL + leftTreeSize + 1);
+        //root.right = reConstructBinaryTree(pre, preL + leftTreeSize + 1, preR, inIndex + 1);
         return root;
     }
 

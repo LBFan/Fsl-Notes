@@ -1,11 +1,10 @@
 package com.fan.exam.jianzhioffer;
 
 /**
- * @author :  PF_23
  * @Description :
- * @date : 2020/7/12.
+ * @Author : shulin.fan
+ * @Date : 2020/8/24
  */
-
 public class TreeNode {
     TreeNode left;
     TreeNode right;
@@ -15,4 +14,3 @@ public class TreeNode {
         this.val = val;
     }
 }
-

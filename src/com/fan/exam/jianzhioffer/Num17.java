@@ -28,6 +28,7 @@ public class Num17 {
     }
 
     private static void print1ToMaxOfNDigits(char[] number, int digit) {
+        // 递归终止条件！！！
         if (digit == number.length) {
             printNumber(number);
             return;
