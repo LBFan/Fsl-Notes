@@ -13,7 +13,7 @@ import java.util.PriorityQueue;
  * @Date : 2020/7/18
  */
 public class Num59 {
-    public int[] maxInWindows(int[] num, int k) {
+    public static int[] maxInWindows(int[] num, int k) {
         //List<Integer> res = new ArrayList<>();
         //
         //// 大顶堆
@@ -59,5 +59,12 @@ public class Num59 {
             right++;
         }
         return ans;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {1,3,-1,-3,5,3,6,7};
+        int k = 3;
+        int[] ints = maxInWindows(nums, k);
+        System.out.println(ints.toString());
     }
 }

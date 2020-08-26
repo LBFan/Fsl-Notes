@@ -41,9 +41,10 @@ public class Num51 {
                 // nums[i] > nums[j] : 这里出现逆序，逆序对数量为(m - i + 1)对
                 // 因为从 i~ m 是排序的，所以nums[i...m]与nums[j]都是逆序对
                 tmp[k++] = nums[j++];
-                cnt += m - i + 1;
+                cnt += (m - i + 1);
             }
         }
+        // 将排好序的片段放回到原数组中
         for (k = l; k <= h; k++) {
             tmp[k] = nums[k];
         }

@@ -24,8 +24,8 @@ public class Eight {
     }
 
     public static void main(String[] args) {
-        String[] strs = {"flower", "flew", "fltyu"};
-        String longestCommonPrefix = longestCommonPrefix(strs);
+        String[] strArr = {"flower", "flew", "fltyu"};
+        String longestCommonPrefix = longestCommonPrefix(strArr);
         System.out.println(longestCommonPrefix);
     }
 }

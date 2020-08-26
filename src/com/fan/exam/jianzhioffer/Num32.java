@@ -14,7 +14,7 @@ public class Num32 {
      * @param root 根节点
      * @return 集合
      */
-    public static List<Integer> PrintFromTopToBottom(TreeNode root) {
+    public static List<Integer> printFromTopToBottom(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
@@ -82,29 +82,10 @@ public class Num32 {
         List<List<Integer>> res = new ArrayList<>();
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
-        boolean reverse = false;
-        TreeNode t;
         while (!queue.isEmpty()) {
             LinkedList<Integer> tmp = new LinkedList<>();
             TreeNode node = queue.poll();
             int cnt = queue.size();
-            //while (cnt-- > 0) {
-            //    t = queue.poll();
-            //    if (t == null) {
-            //        continue;
-            //    }
-            //    tmp.add(root.val);
-            //    if (root.left != null) {
-            //        queue.add(t.left);
-            //    }
-            //    if (t.right != null) {
-            //        queue.add(t.right);
-            //    }
-            //}
-            //if (reverse) {
-            //    Collections.reverse(tmp);
-            //}
-            //reverse = !reverse;
             for (int i = 0; i < cnt; i++) {
                 if (res.size() % 2 == 0) {
                     tmp.addLast(node.val);

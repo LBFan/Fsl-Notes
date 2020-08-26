@@ -40,6 +40,7 @@ public class Num31 {
      */
     public static boolean isPopOrder2(int[] push, int[] pop) {
         int i = 0, j = 0;
+        // 以下其实就是在模拟栈的入栈和出栈
         for (int e : push) {
             push[i] = e;
             while (i >= 0 && push[i] == pop[j]) {

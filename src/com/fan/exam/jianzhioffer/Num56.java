@@ -14,7 +14,7 @@ public class Num56 {
         for (int n : nums) {
             diff ^= n;
         }
-        // 得到出 diff 最右侧不为 0 的位
+        // 得到除 diff 最右侧不为 0 的位
         diff &= -diff;
         for (int num : nums) {
             if ((diff & num) == 0) {

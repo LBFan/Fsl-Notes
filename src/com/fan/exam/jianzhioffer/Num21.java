@@ -20,7 +20,7 @@ public class Num21 {
         int i = 0, j = count;
         int[] copy = nums.clone();
         for (int n : nums) {
-            if (n % 2 == 1) {
+            if ((n & 1) == 1) {
                 copy[i++] = n;
             } else {
                 copy[j++] = n;
