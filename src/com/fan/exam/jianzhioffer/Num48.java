@@ -33,6 +33,28 @@ public class Num48 {
         //
         ///return Math.max(maxLen, curLen);
 
+//        Map<Character, Integer> dic = new HashMap<>();
+//        int res = 0;
+//        int tmp = 0;
+//        for (int i = 0; i < str.length(); i++) {
+//            int j = dic.getOrDefault(str.charAt(i), -1);
+//            dic.put(str.charAt(i), i);
+//            tmp = tmp < i - j ? tmp + 1 : i - j;
+//            res = Math.max(res, tmp);
+//        }
+//        return res;
+        // 滑动窗口
+//        int n = s.length(), ans = 0;
+//        //key出现的字符，value对应的最新的位置
+//        Map<Character, Integer> map = new HashMap<>();
+//        // try to extend the range [i, j]
+//        for (int end = 0, start = 0; end < n; end++) {
+//            if (map.containsKey(s.charAt(end))) {
+//                //由于重复的坐标不知道在start的前方还是后方，所以要取个最大值
+//                start = Math.max(map.get(s.charAt(end)) + 1, start);
+//            }
+//            ans = Math.max(ans, end - start + 1);
+//            map.put(s.charAt(end), end);
         //Map<Character, Integer> dic = new HashMap<>();
         //int res = 0;
         //int tmp = 0;

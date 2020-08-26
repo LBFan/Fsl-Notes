@@ -86,6 +86,12 @@ public class Num60 {
         return ret;
     }
 
+    /**
+     * 大神解法
+     *
+     * @param n
+     * @return
+     */
     public double[] twoSum(int n) {
         double pre[] = {1 / 6d, 1 / 6d, 1 / 6d, 1 / 6d, 1 / 6d, 1 / 6d};
         for (int i = 2; i <= n; i++) {
