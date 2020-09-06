@@ -11,11 +11,12 @@ public class Num42 {
             return 0;
         }
         int sum = 0;
-        int generateSum = 0;
+        int generateSum = Integer.MIN_VALUE;
         for (int i = 0; i < nums.length; i++) {
             sum = sum <= 0 ? nums[i] : nums[i] + sum;
             generateSum = Math.max(generateSum, sum);
         }
         return generateSum;
     }
+
 }

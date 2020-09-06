@@ -12,13 +12,13 @@ public class Num24 {
      * @param head 头结点
      * @return 逆序头结点
      */
-    public static Node reverse(Node head) {
+    public static ListNode reverse(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }
-        Node cur = head, newHead = new Node(-1);
+        ListNode cur = head, newHead = new ListNode(-1);
         while (cur != null) {
-            Node next = cur.next;
+            ListNode next = cur.next;
             cur.next = newHead.next;
             newHead.next = cur;
             cur = next;
@@ -32,12 +32,12 @@ public class Num24 {
      * @param head
      * @return
      */
-    public Node ReverseList(Node head) {
+    public ListNode ReverseList(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }
 
-        Node reverseList = ReverseList(head.next);
+        ListNode reverseList = ReverseList(head.next);
         head.next.next = head;
         head.next = null;
         return reverseList;

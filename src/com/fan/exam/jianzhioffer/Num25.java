@@ -6,7 +6,7 @@ package com.fan.exam.jianzhioffer;
  * @Date : 2020/7/15
  */
 public class Num25 {
-    public static Node mergeTwo(Node first, Node second) {
+    public static ListNode mergeTwo(ListNode first, ListNode second) {
         if (first == null && second == null) {
             return null;
         }
@@ -14,9 +14,9 @@ public class Num25 {
             return first == null ? second : first;
         }
 
-        Node p1 = first, p2 = second;
-        Node newHead = new Node(-1);
-        Node node = newHead;
+        ListNode p1 = first, p2 = second;
+        ListNode newHead = new ListNode(-1);
+        ListNode listNode = newHead;
         while (p1 != null && p2 != null) {
             if (p1.val <= p2.val) {
                 newHead.next = p1;
@@ -35,10 +35,10 @@ public class Num25 {
         while (p2 != null) {
             newHead.next = p2;
         }
-        return node.next;
+        return listNode.next;
     }
 
-    public Node Merge(Node head1, Node head2) {
+    public ListNode Merge(ListNode head1, ListNode head2) {
         if (head1 == null || head2 == null) {
             return head1 == null ? head2 : head1;
         }

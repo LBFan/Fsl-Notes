@@ -3,6 +3,7 @@ package com.fan.exam.jianzhioffer;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 /**
  * @Description : 重建二叉树

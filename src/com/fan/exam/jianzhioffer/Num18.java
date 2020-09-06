@@ -8,11 +8,11 @@ import java.util.concurrent.Semaphore;
  * @Date : 2020/7/14
  */
 public class Num18 {
-    public static Node deleteNode(Node head, Node tobeDelete) {
+    public static ListNode deleteNode(ListNode head, ListNode tobeDelete) {
         if (head.val == tobeDelete.val) {
             return head.next;
         }
-        Node cur = head;
+        ListNode cur = head;
         while (cur != null) {
             if (cur.next != null && cur.next.val == tobeDelete.val) {
                 cur.next = cur.next.next;

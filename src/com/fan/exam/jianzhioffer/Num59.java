@@ -65,6 +65,5 @@ public class Num59 {
         int[] nums = {1,3,-1,-3,5,3,6,7};
         int k = 3;
         int[] ints = maxInWindows(nums, k);
-        System.out.println(ints.toString());
     }
 }

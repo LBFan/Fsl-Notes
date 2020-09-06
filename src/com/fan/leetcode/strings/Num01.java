@@ -1,5 +1,7 @@
 package com.fan.leetcode.strings;
 
+import java.util.Scanner;
+
 /**
  * @author :  PF_23
  * @Description : 字符串循环移位包含

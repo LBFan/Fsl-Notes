@@ -6,11 +6,11 @@ package com.fan.exam.jianzhioffer;
  * @Date : 2020/7/14
  */
 public class Num18PlusOne {
-    public static Node deleteDuplication(Node head) {
+    public static ListNode deleteDuplication(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }
-        Node next = head.next;
+        ListNode next = head.next;
         if (head.val == next.val) {
             while (next != null && head.val == next.val) {
                 next = next.next;

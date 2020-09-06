@@ -6,11 +6,11 @@ package com.fan.exam.jianzhioffer;
  * @date : 2019/12/12.
  */
 
-public class Node {
+public class ListNode {
     int val;
-    Node next;
+    ListNode next;
 
-    Node(int val) {
+    ListNode(int val) {
         this.val = val;
     }
 }

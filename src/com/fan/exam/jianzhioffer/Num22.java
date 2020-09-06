@@ -6,7 +6,7 @@ package com.fan.exam.jianzhioffer;
  * @Date : 2020/7/15
  */
 public class Num22 {
-    public static Node lastKth(Node head, int k) {
+    public static ListNode lastKth(ListNode head, int k) {
         //if (head == null) {
         //    return null;
         //}
@@ -28,7 +28,7 @@ public class Num22 {
         //return p;
 
         // 暂不考虑越界
-        Node fast = head, slow = head;
+        ListNode fast = head, slow = head;
         int t = 0;
         while (fast != null) {
             if (t >= k) {

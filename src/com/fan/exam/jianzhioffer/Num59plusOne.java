@@ -6,7 +6,7 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 
 /**
- * @Description :
+ * @Description : 队列的最大值
  * @Author : shulin.fan
  * @Date : 2020/8/24
  */
