@@ -6,13 +6,13 @@ package com.fan.exam.jianzhioffer;
  * @Date : 2020/7/15
  */
 public class Num23 {
-    public static Node meetingNode(Node head) {
+    public static ListNode meetingNode(ListNode head) {
         if (head == null || head.next == null) {
             return null;
         }
 
-        Node fast = head;
-        Node slow = head;
+        ListNode fast = head;
+        ListNode slow = head;
         do {
             fast = fast.next.next;
             slow = slow.next;

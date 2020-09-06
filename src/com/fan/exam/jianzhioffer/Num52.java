@@ -6,8 +6,8 @@ package com.fan.exam.jianzhioffer;
  * @Date : 2020/7/18
  */
 public class Num52 {
-    public Node findFirstCommonNode(Node pHead1, Node pHead2) {
-        Node l1 = pHead1, l2 = pHead2;
+    public ListNode findFirstCommonNode(ListNode pHead1, ListNode pHead2) {
+        ListNode l1 = pHead1, l2 = pHead2;
         while (l1 != l2) {
             l1 = (l1 == null) ? pHead2 : l1.next;
             l2 = (l2 == null) ? pHead1 : l2.next;
@@ -22,9 +22,9 @@ public class Num52 {
      * @param p2
      * @return
      */
-    public static Node firstPublicNode(Node p1, Node p2) {
-        Node l1 = reverse(p1);
-        Node l2 = reverse(p2);
+    public static ListNode firstPublicNode(ListNode p1, ListNode p2) {
+        ListNode l1 = reverse(p1);
+        ListNode l2 = reverse(p2);
         while (l1.next != null && l2.next != null) {
             if (l1.next != l2.next) {
                 return l1;
@@ -33,11 +33,11 @@ public class Num52 {
         return null;
     }
 
-    private static Node reverse(Node node) {
-        Node newHead = new Node(-1);
-        Node cur = node;
+    private static ListNode reverse(ListNode listNode) {
+        ListNode newHead = new ListNode(-1);
+        ListNode cur = listNode;
         while (cur != null) {
-            Node next = cur.next;
+            ListNode next = cur.next;
             cur.next = newHead.next;
             newHead.next = cur;
             cur = next;

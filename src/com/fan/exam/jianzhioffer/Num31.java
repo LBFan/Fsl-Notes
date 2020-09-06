@@ -53,10 +53,17 @@ public class Num31 {
     }
 
     public static void main(String[] args) {
-        int[] push = {1, 2, 3, 4, 5};
-        int[] pop = {4, 5, 3, 2, 1};
-        boolean popOrder = isPopOrder(push, pop);
-        System.out.println(popOrder);
+//        int[] push = {1, 2, 3, 4, 5};
+//        int[] pop = {4, 5, 3, 2, 1};
+//        boolean popOrder = isPopOrder(push, pop);
+//        System.out.println(popOrder);
+        Integer i = 1, j = 1;
+        System.out.println(i == j);
+        System.out.println(i.equals(j));
+
+        Integer m = 200, n = 200;
+        System.out.println(m == n);
+        System.out.println(m.equals(n));
 
     }
 }

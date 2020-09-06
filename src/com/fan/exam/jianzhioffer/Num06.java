@@ -14,16 +14,16 @@ public class Num06 {
     /**
      * 递归
      *
-     * @param node node
+     * @param listNode node
      * @return list
      */
-    public ArrayList<Integer> printListFromTailToHead(Node node) {
+    public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
         ArrayList<Integer> result = new ArrayList<>();
-        if (node != null) {
-            if (node.next != null) {
-                result.addAll(printListFromTailToHead(node.next));
+        if (listNode != null) {
+            if (listNode.next != null) {
+                result.addAll(printListFromTailToHead(listNode.next));
             }
-            result.add(node.val);
+            result.add(listNode.val);
         }
         return result;
     }
@@ -31,20 +31,20 @@ public class Num06 {
     /**
      * 头插法
      *
-     * @param node 原链表头节点
+     * @param listNode 原链表头节点
      * @return res
      */
-    public ArrayList<Integer> printListFromTailToHead2(Node node) {
-        Node head = new Node(-1);
-        Node next;
-        while (node != null) {
-            next = node.next;
-            node.next = head.next;
-            head.next = node;
-            node = next;
+    public ArrayList<Integer> printListFromTailToHead2(ListNode listNode) {
+        ListNode head = new ListNode(-1);
+        ListNode next;
+        while (listNode != null) {
+            next = listNode.next;
+            listNode.next = head.next;
+            head.next = listNode;
+            listNode = next;
         }
         ArrayList<Integer> result = new ArrayList<>();
-        Node cur = head.next;
+        ListNode cur = head.next;
         while (cur != null) {
             result.add(cur.val);
             cur = cur.next;
@@ -55,14 +55,14 @@ public class Num06 {
     /**
      * 桟
      *
-     * @param node 原链表头节点
+     * @param listNode 原链表头节点
      * @return res
      */
-    public List<Integer> printListFromTailToHead3(Node node) {
-        Stack<Node> stack = new Stack<>();
-        while (node != null) {
-            stack.push(node);
-            node = node.next;
+    public List<Integer> printListFromTailToHead3(ListNode listNode) {
+        Stack<ListNode> stack = new Stack<>();
+        while (listNode != null) {
+            stack.push(listNode);
+            listNode = listNode.next;
         }
 
         List<Integer> res = new ArrayList<>();
