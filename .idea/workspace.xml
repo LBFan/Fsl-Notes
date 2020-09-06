@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f55676e2-6fe3-4d6e-b888-0620ca09e7ad" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$USER_HOME$/Downloads/repository" />
+        <option name="mavenHome" value="$USER_HOME$/Downloads/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="$USER_HOME$/Downloads/apache-maven-3.6.3/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1h8gAhcASkvTwK9h3P9bUNPs6zw" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f55676e2-6fe3-4d6e-b888-0620ca09e7ad" name="Default Changelist" comment="" />
+      <created>1599397992107</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599397992107</updated>
+      <workItem from="1599397998578" duration="432000" />
+      <workItem from="1599398544469" duration="48000" />
+      <workItem from="1599398616531" duration="168000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="101" y="23" width="1214" height="877" key="SettingsEditor" timestamp="1599398651587">
+      <screen x="41" y="23" width="1399" height="877" />
+    </state>
+    <state x="101" y="23" width="1214" height="877" key="SettingsEditor/41.23.1399.877@41.23.1399.877" timestamp="1599398651587" />
+    <state x="365" y="111" key="VCS.ChangeListViewerDialog" timestamp="1599398229495">
+      <screen x="41" y="23" width="1399" height="877" />
+    </state>
+    <state x="365" y="111" key="VCS.ChangeListViewerDialog/41.23.1399.877@41.23.1399.877" timestamp="1599398229495" />
+    <state x="241" y="138" key="Vcs.Push.Dialog.v2" timestamp="1599398733690">
+      <screen x="41" y="23" width="1399" height="877" />
+    </state>
+    <state x="241" y="138" key="Vcs.Push.Dialog.v2/41.23.1399.877@41.23.1399.877" timestamp="1599398733690" />
+    <state x="506" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599398778687">
+      <screen x="41" y="23" width="1399" height="877" />
+    </state>
+    <state x="506" y="368" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/41.23.1399.877@41.23.1399.877" timestamp="1599398778687" />
+    <state x="336" y="274" key="git4idea.ui.GitUnstashDialog" timestamp="1599398717224">
+      <screen x="41" y="23" width="1399" height="877" />
+    </state>
+    <state x="336" y="274" key="git4idea.ui.GitUnstashDialog/41.23.1399.877@41.23.1399.877" timestamp="1599398717224" />
+  </component>
+</project>
