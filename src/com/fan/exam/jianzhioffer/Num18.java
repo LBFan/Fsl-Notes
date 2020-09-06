@@ -1,5 +1,7 @@
 package com.fan.exam.jianzhioffer;
 
+import java.util.concurrent.Semaphore;
+
 /**
  * @Description : 删除链表的节点 在O(1)时间内
  * @Author : shulin.fan
@@ -19,5 +21,6 @@ public class Num18 {
             cur = cur.next;
         }
         return head;
+
     }
 }

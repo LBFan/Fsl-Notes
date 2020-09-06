@@ -28,7 +28,7 @@ public class Main02 {
         // 最后一个串没有","
 
         for (String ss : arr) {
-            String[] match = match(keys, s);
+            String[] match = match(keys, ss);
             for (String val : match) {
                 System.out.print(val + " ");
             }

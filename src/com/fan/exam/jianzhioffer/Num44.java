@@ -36,7 +36,7 @@ public class Num44 {
         // 2.
         long num = start + (n - 1) / digit;
         // 3.
-        return Long.toString(num).charAt((n - 1) % digit - '0');
+        return Long.toString(num).charAt((n - 1) % digit) - '0';
     }
 
     public static int digitAtIndex02(int index) {
@@ -80,7 +80,7 @@ public class Num44 {
 
     public static void main(String[] args) {
         int index = 1001;
-        int digitAtIndex = digitAtIndex02(index);
+        int digitAtIndex = digitAtIndex01(index);
         System.out.println(digitAtIndex);
     }
 }

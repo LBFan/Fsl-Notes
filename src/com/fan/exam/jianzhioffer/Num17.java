@@ -43,21 +43,21 @@ public class Num17 {
     private static void printNumber(char[] number) {
         int index = 0;
         // '010' -> 10 去掉前面的0
-        while (index < number.length && number[index] == '0') {
-            index++;
-        }
+        //while (index < number.length && number[index] == '0') {
+        //    index++;
+        //}
         int num = 0;
         while (index < number.length) {
-            num = 10 * num + (number[index] - '0');
-            System.out.print(number[index++]);
+            num = 10 * num + (number[index++] - '0');
+            //System.out.print(number[index++]);
         }
         list.add(num);
-        System.out.println();
+        //System.out.println();
     }
 
     public static void main(String[] args) {
         printOneToMaxNDigit(2);
-        System.out.println("===========================");
+        //System.out.println("===========================");
         for (int r : res) {
             System.out.print(r + "  ");
         }
