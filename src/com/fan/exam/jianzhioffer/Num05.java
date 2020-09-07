@@ -31,7 +31,7 @@ public class Num05 {
     //    return stringBuffer.toString();
     //}
 
-    public String replaceSpace(String s) {
+    public static String replaceSpace(String s) {
         int length = s.length();
         char[] array = new char[length * 3];
         int size = 0;
@@ -50,8 +50,9 @@ public class Num05 {
 
 
     public static void main(String[] args) {
-        //StringBuffer stringBuffer = new StringBuffer("sdfg rtyv gtgh 4 ");
-        //String s = replaceSpaces(stringBuffer);
-        //System.out.println(s);
+        System.out.println(1);
+        String string = "sdfg rtyv gtgh 4 ";
+        String s = replaceSpace(string);
+        System.out.println(s);
     }
 }
