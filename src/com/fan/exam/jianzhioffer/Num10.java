@@ -40,7 +40,7 @@ public class Num10 {
     }
 
     public static void main(String[] args) {
-        int fib = fib(5);
+        int fib = fib(10);
         System.out.println(fib);
     }
 }
