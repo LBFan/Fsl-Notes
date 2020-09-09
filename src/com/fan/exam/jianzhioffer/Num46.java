@@ -1,7 +1,7 @@
 package com.fan.exam.jianzhioffer;
 
 /**
- * @Description : 把数字翻译成字符串 DP
+ * @Description : 把数字翻译成字符串的种数 DP
  * @Author : shulin.fan
  * @Date : 2020/7/17
  */

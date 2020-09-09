@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @Description : 最长不含重复字符的字符串
+ * @Description : 最长不含重复字符的字符串长度
  * @Author : shulin.fan
  * @Date : 2020/7/17
  */
