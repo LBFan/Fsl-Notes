@@ -24,6 +24,7 @@ public class Num03 {
                     duplication[0] = nums[i];
                     return duplication[0];
                 }
+                swap(nums, i, nums[i]);
             }
         }
         return -1;
