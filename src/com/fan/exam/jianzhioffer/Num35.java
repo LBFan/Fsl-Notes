@@ -48,6 +48,32 @@ public class Num35 {
         return newHead;
     }
 
+    /**
+     * 简单map
+     *
+     * @param head
+     * @return
+     */
+    public static RandomListNode copy(RandomListNode head) {
+        if (head == null) {
+            return null;
+        }
+        Map<RandomListNode, RandomListNode> map = new HashMap<>();
+        RandomListNode cur = head;
+        while (cur != null) {
+            map.put(cur, new RandomListNode(cur.label));
+            cur = cur.next;
+        }
+
+        cur = head;
+        while (cur != null) {
+            map.get(cur).random = cur.random.next;
+            map.get(cur).next = cur.next;
+            cur = cur.next;
+        }
+        return map.get(head);
+    }
+
 
     /**
      * 递归法
