@@ -26,4 +26,28 @@ public class Num41PlusOne {
         return queue.isEmpty() ? '#' : queue.peek();
     }
 
+    /**
+     * 100%
+     *
+     * @param s
+     * @return
+     */
+    public static char firstChar(String s) {
+        if (s == null || s.length() <= 0) {
+            return ' ';
+        }
+
+        int[] counts = new int[256];
+        for (char ch : s.toCharArray()) {
+            counts[ch]++;
+        }
+
+        for (int i = 0; i < s.length(); i++) {
+            if (counts[s.charAt(i)] == 1) {
+                return s.charAt(i);
+            }
+        }
+        return ' ';
+    }
+
 }

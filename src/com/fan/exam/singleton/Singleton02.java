@@ -1,4 +1,4 @@
-package com.fan.singleton;
+package com.fan.exam.singleton;
 
 /**
  * @author :  PF_23

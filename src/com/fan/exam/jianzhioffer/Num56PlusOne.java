@@ -2,7 +2,7 @@ package com.fan.exam.jianzhioffer;
 
 /**
  * @Description : 数组中数字出现的次数
- * 一个整型数组里除了一个数字之外，其他的数字都出现了三次，找出这两个数。
+ * 一个整型数组里除了一个数字之外，其他的数字都出现了三次，找出这个数。
  * @Author : shulin.fan
  * @Date : 2020/7/18
  */

@@ -24,7 +24,8 @@ public class Num36 {
         }
         dfs(cur.left);
         if (pre != null) {
-            pre = cur.left;
+            // TODO !!！
+            pre.right = cur;
         } else {
             head = cur;
         }
