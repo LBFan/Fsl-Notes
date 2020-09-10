@@ -2,6 +2,7 @@ package com.fan.exam.jianzhioffer;
 
 /**
  * @Description : 链表中环的入口节点
+ * 假设一定存在环
  * @Author : shulin.fan
  * @Date : 2020/7/15
  */

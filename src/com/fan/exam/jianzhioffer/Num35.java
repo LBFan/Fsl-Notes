@@ -67,8 +67,8 @@ public class Num35 {
 
         cur = head;
         while (cur != null) {
-            map.get(cur).random = cur.random.next;
-            map.get(cur).next = cur.next;
+            map.get(cur).random = map.get(cur.random);
+            map.get(cur).next = map.get(cur.next);
             cur = cur.next;
         }
         return map.get(head);

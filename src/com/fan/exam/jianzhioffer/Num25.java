@@ -28,11 +28,11 @@ public class Num25 {
                 p2 = p2.next;
             }
         }
-        while (p1 != null) {
+        if (p1 != null) {
             newHead.next = p1;
         }
 
-        while (p2 != null) {
+        if (p2 != null) {
             newHead.next = p2;
         }
         return listNode.next;

@@ -12,7 +12,7 @@ public class Num14 {
         }
 
         long res = 1;
-        int mod = 1000000007;
+        int mod = (int) (1e9+7);
         while (n > 4) {
             res *= 3;
             res %= mod;
