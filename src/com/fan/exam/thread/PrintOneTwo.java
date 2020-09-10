@@ -1,7 +1,5 @@
-package com.fan.thread;
+package com.fan.exam.thread;
 
-import java.util.Collection;
-import java.util.Collections;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.locks.Condition;
@@ -96,10 +94,10 @@ public class PrintOneTwo {
     }
 
     public static void main(String[] args) {
-//        PrintOneTwo printOneTwo = new PrintOneTwo();
-//        ExecutorService service = Executors.newFixedThreadPool(2);
-//        service.execute(printOneTwo.new Thread1());
-//        service.execute(printOneTwo.new Thread2());
+        PrintOneTwo printOneTwo = new PrintOneTwo();
+        ExecutorService service = Executors.newFixedThreadPool(2);
+        service.execute(printOneTwo.new Thread1());
+        service.execute(printOneTwo.new Thread2());
 //
 //        service.shutdown();
 

@@ -1,4 +1,4 @@
-package com.fan.thread;
+package com.fan.exam.thread;
 
 import java.util.concurrent.TimeUnit;
 

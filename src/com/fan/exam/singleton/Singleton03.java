@@ -10,7 +10,7 @@ package com.fan.exam.singleton;
 public class Singleton03 {
 
     /**
-     * 初始时即加载
+     * 初始时不加载
      */
     private static Singleton03 instance;
 
