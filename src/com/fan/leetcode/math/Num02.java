@@ -7,6 +7,13 @@ package com.fan.leetcode.math;
  */
 
 public class Num02 {
+    /**
+     * 最大公约数（辗转相除法）
+     *
+     * @param a a
+     * @param b b
+     * @return 最大公约数
+     */
     int gcb(int a, int b) {
         return b == 0 ? a : gcb(b, a % b);
     }
