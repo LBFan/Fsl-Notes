@@ -19,7 +19,7 @@ public class Num15 {
     }
 
     public static void main(String[] args) {
-        int num = 9;
+        int num = 9999;
         int i = numberOfOne(num);
         System.out.println(i);
     }
