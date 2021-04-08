@@ -41,7 +41,7 @@ public class LRU {
     }
 
     /**
-     * 更新顺序
+     * 查询：更新顺序
      *
      * @param key
      * @return
@@ -59,7 +59,7 @@ public class LRU {
     }
 
     /**
-     * 更新顺序
+     * 添加：更新顺序
      *
      * @param key
      * @param value

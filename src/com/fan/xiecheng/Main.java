@@ -1,4 +1,4 @@
-package com.fan.xiecehng;
+package com.fan.xiecheng;
 
 import java.util.Arrays;
 import java.util.Scanner;
