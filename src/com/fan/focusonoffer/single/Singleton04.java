@@ -8,6 +8,10 @@ package com.fan.focusonoffer.single;
 public class Singleton04 {
     private static volatile Singleton04 instance = null;
 
+    /**
+     * 双重校验
+     * @return
+     */
     public static Singleton04 getInstance() {
         if (instance == null) {
             synchronized (Singleton04.class) {
