@@ -7,5 +7,8 @@ package com.fan;
  */
 @Fan(value = "fan", number = 23)
 public class TestFan {
+    public static void main(String[] args) {
+        System.out.println("yi zhi hua");
+    }
 
 }
